@@ -1,0 +1,3590 @@
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:32:35", "station":1, "speed":3.92, "bearing":135, "max":5.74}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 135, u'max': 5.74, u'station': 1, u'speed': 3.92, u'time': u'2019-02-28 23:32:35'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:38:05", "station":1, "speed":3.93, "bearing":90, "max":5.74}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 90, u'max': 5.74, u'station': 1, u'speed': 3.93, u'time': u'2019-02-28 23:38:05'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:43:35", "station":1, "speed":4.04, "bearing":135, "max":5.74}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 135, u'max': 5.74, u'station': 1, u'speed': 4.04, u'time': u'2019-02-28 23:43:35'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:49:05", "station":1, "speed":3.74, "bearing":135, "max":5.74}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 135, u'max': 5.74, u'station': 1, u'speed': 3.74, u'time': u'2019-02-28 23:49:05'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:02:04", "station": 1, "lasthr":0.28, "today":0.28 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.28, u'today': 0.28, u'time': u'2019-02-28 18:02:04'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:05:04", "station": 1, "lasthr":0.00, "today":0.28 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.28, u'time': u'2019-02-28 19:05:04'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:08:04", "station": 1, "lasthr":0.00, "today":0.28 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.28, u'time': u'2019-02-28 20:08:04'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:00:34", "station": 1, "lasthr":0.56, "today":0.84 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.56, u'today': 0.84, u'time': u'2019-02-28 21:00:34'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:03:34", "station": 1, "lasthr":0.00, "today":0.84 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.84, u'time': u'2019-02-28 22:03:34'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:06:35", "station": 1, "lasthr":0.00, "today":0.84 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.84, u'time': u'2019-02-28 23:06:35'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:52:05", "station":1, "moist":95, "temp":23.30}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'moist': 95, u'station': 1, u'temp': 23.3, u'time': u'2019-02-28 20:52:05'})
+got cursor 
+('packet type is', 1)
+('inserting soil packet with ', 'INSERT INTO soil(stat_id, when_recorded, soil_moisture, soil_temperature) VALUES(?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:02:04", "station": 1, "lightPercent": 48}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 48, u'time': u'2019-02-28 18:02:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:12:34", "station": 1, "lightPercent": 58}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 58, u'time': u'2019-02-28 18:12:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:23:04", "station": 1, "lightPercent": 45}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 45, u'time': u'2019-02-28 18:23:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:33:34", "station": 1, "lightPercent": 21}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 21, u'time': u'2019-02-28 18:33:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:44:04", "station": 1, "lightPercent": 13}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 13, u'time': u'2019-02-28 18:44:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:54:34", "station": 1, "lightPercent": 5}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 5, u'time': u'2019-02-28 18:54:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:05:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 19:05:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:15:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 19:15:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:26:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 19:26:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:36:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 19:36:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:47:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 19:47:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:57:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 19:57:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:08:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 20:08:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:18:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 20:18:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:29:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 20:29:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:39:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 20:39:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:50:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 20:50:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:00:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 21:00:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:11:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 21:11:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:21:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 21:21:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:32:04", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 21:32:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:42:34", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 21:42:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:53:04", "station": 1, "lightPercent": 1}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 1, u'time': u'2019-02-28 21:53:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:03:34", "station": 1, "lightPercent": 1}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 1, u'time': u'2019-02-28 22:03:34'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:14:04", "station": 1, "lightPercent": 1}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 1, u'time': u'2019-02-28 22:14:04'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:24:35", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 22:24:35'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:35:05", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 22:35:05'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:45:35", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 22:45:35'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:56:05", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 22:56:05'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:06:35", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 23:06:35'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:17:05", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 23:17:05'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:27:35", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 23:27:35'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:38:05", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 23:38:05'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:48:35", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 23:48:35'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:02:04", "station":1, "humid":75.35, "temp":20.47, "press":0.00}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 0.0, u'station': 1, u'humid': 75.35, u'temp': 20.47, u'time': u'2019-02-28 18:02:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:12:34", "station":1, "humid":73.95, "temp":21.00, "press":899.92}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.92, u'station': 1, u'humid': 73.95, u'temp': 21.0, u'time': u'2019-02-28 18:12:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:23:04", "station":1, "humid":73.44, "temp":21.31, "press":899.88}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.88, u'station': 1, u'humid': 73.44, u'temp': 21.31, u'time': u'2019-02-28 18:23:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:33:34", "station":1, "humid":78.17, "temp":20.24, "press":900.14}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.14, u'station': 1, u'humid': 78.17, u'temp': 20.24, u'time': u'2019-02-28 18:33:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:44:04", "station":1, "humid":83.81, "temp":19.17, "press":900.13}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.13, u'station': 1, u'humid': 83.81, u'temp': 19.17, u'time': u'2019-02-28 18:44:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 18:54:34", "station":1, "humid":86.77, "temp":18.38, "press":900.02}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.02, u'station': 1, u'humid': 86.77, u'temp': 18.38, u'time': u'2019-02-28 18:54:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:05:04", "station":1, "humid":87.95, "temp":18.34, "press":900.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.12, u'station': 1, u'humid': 87.95, u'temp': 18.34, u'time': u'2019-02-28 19:05:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:15:34", "station":1, "humid":88.80, "temp":18.23, "press":900.14}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.14, u'station': 1, u'humid': 88.8, u'temp': 18.23, u'time': u'2019-02-28 19:15:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:15:34", "station":1, "humid":88.80, "temp":18.23, "press":900.14}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.14, u'station': 1, u'humid': 88.8, u'temp': 18.23, u'time': u'2019-02-28 19:15:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:26:04", "station":1, "humid":89.11, "temp":18.29, "press":900.40}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.4, u'station': 1, u'humid': 89.11, u'temp': 18.29, u'time': u'2019-02-28 19:26:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:36:34", "station":1, "humid":89.57, "temp":18.23, "press":900.36}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.36, u'station': 1, u'humid': 89.57, u'temp': 18.23, u'time': u'2019-02-28 19:36:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:47:04", "station":1, "humid":89.64, "temp":18.02, "press":900.59}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.59, u'station': 1, u'humid': 89.64, u'temp': 18.02, u'time': u'2019-02-28 19:47:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 19:57:34", "station":1, "humid":90.07, "temp":18.04, "press":900.78}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.78, u'station': 1, u'humid': 90.07, u'temp': 18.04, u'time': u'2019-02-28 19:57:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:08:04", "station":1, "humid":90.05, "temp":18.03, "press":900.84}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.84, u'station': 1, u'humid': 90.05, u'temp': 18.03, u'time': u'2019-02-28 20:08:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:18:34", "station":1, "humid":90.59, "temp":18.04, "press":900.92}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.92, u'station': 1, u'humid': 90.59, u'temp': 18.04, u'time': u'2019-02-28 20:18:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:29:04", "station":1, "humid":90.62, "temp":18.11, "press":901.06}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.06, u'station': 1, u'humid': 90.62, u'temp': 18.11, u'time': u'2019-02-28 20:29:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:39:34", "station":1, "humid":90.52, "temp":17.91, "press":900.93}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.93, u'station': 1, u'humid': 90.52, u'temp': 17.91, u'time': u'2019-02-28 20:39:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 20:50:04", "station":1, "humid":91.31, "temp":17.83, "press":901.15}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.15, u'station': 1, u'humid': 91.31, u'temp': 17.83, u'time': u'2019-02-28 20:50:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:00:34", "station":1, "humid":91.76, "temp":17.86, "press":901.10}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.1, u'station': 1, u'humid': 91.76, u'temp': 17.86, u'time': u'2019-02-28 21:00:34'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:11:04", "station":1, "humid":91.77, "temp":17.87, "press":901.18}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.18, u'station': 1, u'humid': 91.77, u'temp': 17.87, u'time': u'2019-02-28 21:11:04'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:21:35", "station":1, "humid":92.10, "temp":17.88, "press":901.15}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.15, u'station': 1, u'humid': 92.1, u'temp': 17.88, u'time': u'2019-02-28 21:21:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:32:05", "station":1, "humid":91.98, "temp":17.88, "press":901.22}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.22, u'station': 1, u'humid': 91.98, u'temp': 17.88, u'time': u'2019-02-28 21:32:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:42:35", "station":1, "humid":92.05, "temp":17.87, "press":901.31}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.31, u'station': 1, u'humid': 92.05, u'temp': 17.87, u'time': u'2019-02-28 21:42:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 21:53:05", "station":1, "humid":91.94, "temp":17.84, "press":901.29}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.29, u'station': 1, u'humid': 91.94, u'temp': 17.84, u'time': u'2019-02-28 21:53:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:03:35", "station":1, "humid":91.95, "temp":17.77, "press":901.35}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.35, u'station': 1, u'humid': 91.95, u'temp': 17.77, u'time': u'2019-02-28 22:03:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:14:05", "station":1, "humid":92.24, "temp":17.75, "press":901.40}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.4, u'station': 1, u'humid': 92.24, u'temp': 17.75, u'time': u'2019-02-28 22:14:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:24:35", "station":1, "humid":92.01, "temp":17.77, "press":901.35}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.35, u'station': 1, u'humid': 92.01, u'temp': 17.77, u'time': u'2019-02-28 22:24:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:35:05", "station":1, "humid":92.36, "temp":17.82, "press":901.41}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.41, u'station': 1, u'humid': 92.36, u'temp': 17.82, u'time': u'2019-02-28 22:35:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:45:35", "station":1, "humid":92.43, "temp":17.86, "press":901.39}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.39, u'station': 1, u'humid': 92.43, u'temp': 17.86, u'time': u'2019-02-28 22:45:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 22:56:05", "station":1, "humid":92.51, "temp":17.89, "press":901.42}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.42, u'station': 1, u'humid': 92.51, u'temp': 17.89, u'time': u'2019-02-28 22:56:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:06:35", "station":1, "humid":92.31, "temp":17.87, "press":901.35}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.35, u'station': 1, u'humid': 92.31, u'temp': 17.87, u'time': u'2019-02-28 23:06:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:17:05", "station":1, "humid":92.36, "temp":17.78, "press":901.31}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.31, u'station': 1, u'humid': 92.36, u'temp': 17.78, u'time': u'2019-02-28 23:17:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:27:35", "station":1, "humid":92.43, "temp":17.71, "press":901.33}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.33, u'station': 1, u'humid': 92.43, u'temp': 17.71, u'time': u'2019-02-28 23:27:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:38:05", "station":1, "humid":92.25, "temp":17.68, "press":901.22}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.22, u'station': 1, u'humid': 92.25, u'temp': 17.68, u'time': u'2019-02-28 23:38:05'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:48:35", "station":1, "humid":92.18, "temp":17.67, "press":901.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.12, u'station': 1, u'humid': 92.18, u'temp': 17.67, u'time': u'2019-02-28 23:48:35'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:30:21", "station":1, "speed":4.24, "bearing":0, "max":7.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 0, u'max': 7.12, u'station': 1, u'speed': 4.24, u'time': u'2019-03-01 05:30:21'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:35:51", "station":1, "speed":3.94, "bearing":0, "max":7.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 0, u'max': 7.12, u'station': 1, u'speed': 3.94, u'time': u'2019-03-01 05:35:51'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:41:21", "station":1, "speed":3.97, "bearing":135, "max":7.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 135, u'max': 7.12, u'station': 1, u'speed': 3.97, u'time': u'2019-03-01 05:41:21'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:46:51", "station":1, "speed":4.45, "bearing":135, "max":7.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 135, u'max': 7.12, u'station': 1, u'speed': 4.45, u'time': u'2019-03-01 05:46:51'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:52:21", "station":1, "speed":4.39, "bearing":135, "max":7.12}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'bearing': 135, u'max': 7.12, u'station': 1, u'speed': 4.39, u'time': u'2019-03-01 05:52:21'})
+got cursor 
+('packet type is', 4)
+('inserting wind packet with ', 'INSERT INTO wind(stat_id, when_recorded, bearing, speed, max_speed) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:09:20", "station": 1, "lasthr":0.00, "today":0.00 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.0, u'time': u'2019-03-01 00:09:20'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:01:50", "station": 1, "lasthr":0.56, "today":0.56 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.56, u'today': 0.56, u'time': u'2019-03-01 01:01:50'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:04:50", "station": 1, "lasthr":0.00, "today":0.56 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.56, u'time': u'2019-03-01 02:04:50'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:07:51", "station": 1, "lasthr":0.00, "today":0.56 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.0, u'today': 0.56, u'time': u'2019-03-01 03:07:51'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:00:21", "station": 1, "lasthr":0.28, "today":0.84 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.28, u'today': 0.84, u'time': u'2019-03-01 04:00:21'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:03:21", "station": 1, "lasthr":0.28, "today":1.12 }')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lasthr': 0.28, u'today': 1.12, u'time': u'2019-03-01 05:03:21'})
+got cursor 
+('packet type is', 2)
+('inserting rain packet with ', 'INSERT INTO rain(stat_id, when_recorded, one_hr_rain, todays_rain) VALUES(?,?,?,?)')
+inserted
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:52:22", "station":1, "moist":95, "temp":23.24}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'moist': 95, u'station': 1, u'temp': 23.24, u'time': u'2019-02-28 23:52:22'})
+got cursor 
+('packet type is', 1)
+('inserting soil packet with ', 'INSERT INTO soil(stat_id, when_recorded, soil_moisture, soil_temperature) VALUES(?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:52:51", "station":1, "moist":94, "temp":23.22}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'moist': 94, u'station': 1, u'temp': 23.22, u'time': u'2019-03-01 02:52:51'})
+got cursor 
+('packet type is', 1)
+('inserting soil packet with ', 'INSERT INTO soil(stat_id, when_recorded, soil_moisture, soil_temperature) VALUES(?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:58:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-02-28 23:58:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:09:20", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 00:09:20'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:19:50", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 00:19:50'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:30:20", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 00:30:20'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:40:50", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 00:40:50'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:51:20", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 00:51:20'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:01:50", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 01:01:50'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:12:20", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 01:12:20'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:22:50", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 01:22:50'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:33:20", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 01:33:20'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:43:50", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 01:43:50'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:54:20", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 01:54:20'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:04:50", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 02:04:50'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:15:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 02:15:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:25:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 02:25:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:36:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 02:36:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:46:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 02:46:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:57:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 02:57:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:07:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 03:07:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:18:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 03:18:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:28:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 03:28:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:39:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 03:39:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:49:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 03:49:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:00:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 04:00:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:10:51", "station": 1, "lightPercent": 1}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 1, u'time': u'2019-03-01 04:10:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:21:21", "station": 1, "lightPercent": 1}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 1, u'time': u'2019-03-01 04:21:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:31:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 04:31:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:42:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 04:42:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:52:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 04:52:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:03:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 05:03:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:13:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 05:13:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:24:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 05:24:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:34:51", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 05:34:51'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:45:21", "station": 1, "lightPercent": 0}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'station': 1, u'lightPercent': 0, u'time': u'2019-03-01 05:45:21'})
+got cursor 
+('packet type is', 3)
+('inserting light packet with ', 'INSERT INTO light(stat_id, when_recorded, light_percent) VALUES(?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-02-28 23:58:52", "station":1, "humid":92.28, "temp":17.70, "press":901.03}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 901.03, u'station': 1, u'humid': 92.28, u'temp': 17.7, u'time': u'2019-02-28 23:58:52'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:09:20", "station":1, "humid":92.50, "temp":17.68, "press":900.98}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.98, u'station': 1, u'humid': 92.5, u'temp': 17.68, u'time': u'2019-03-01 00:09:20'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:19:50", "station":1, "humid":92.17, "temp":17.69, "press":900.80}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.8, u'station': 1, u'humid': 92.17, u'temp': 17.69, u'time': u'2019-03-01 00:19:50'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:30:20", "station":1, "humid":92.43, "temp":17.54, "press":900.68}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.68, u'station': 1, u'humid': 92.43, u'temp': 17.54, u'time': u'2019-03-01 00:30:20'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:40:50", "station":1, "humid":93.17, "temp":17.51, "press":900.54}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.54, u'station': 1, u'humid': 93.17, u'temp': 17.51, u'time': u'2019-03-01 00:40:50'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 00:51:20", "station":1, "humid":93.17, "temp":17.48, "press":900.61}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.61, u'station': 1, u'humid': 93.17, u'temp': 17.48, u'time': u'2019-03-01 00:51:20'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:01:50", "station":1, "humid":93.52, "temp":17.41, "press":900.36}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.36, u'station': 1, u'humid': 93.52, u'temp': 17.41, u'time': u'2019-03-01 01:01:50'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:12:20", "station":1, "humid":93.60, "temp":17.48, "press":900.33}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.33, u'station': 1, u'humid': 93.6, u'temp': 17.48, u'time': u'2019-03-01 01:12:20'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:22:51", "station":1, "humid":93.43, "temp":17.53, "press":900.20}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.2, u'station': 1, u'humid': 93.43, u'temp': 17.53, u'time': u'2019-03-01 01:22:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:22:51", "station":1, "humid":93.43, "temp":17.53, "press":900.20}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.2, u'station': 1, u'humid': 93.43, u'temp': 17.53, u'time': u'2019-03-01 01:22:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:33:21", "station":1, "humid":93.48, "temp":17.49, "press":900.19}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.19, u'station': 1, u'humid': 93.48, u'temp': 17.49, u'time': u'2019-03-01 01:33:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:43:51", "station":1, "humid":93.40, "temp":17.39, "press":900.10}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 900.1, u'station': 1, u'humid': 93.4, u'temp': 17.39, u'time': u'2019-03-01 01:43:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 01:54:21", "station":1, "humid":93.66, "temp":17.38, "press":899.93}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.93, u'station': 1, u'humid': 93.66, u'temp': 17.38, u'time': u'2019-03-01 01:54:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:04:51", "station":1, "humid":93.47, "temp":17.42, "press":899.82}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.82, u'station': 1, u'humid': 93.47, u'temp': 17.42, u'time': u'2019-03-01 02:04:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:15:21", "station":1, "humid":93.69, "temp":17.40, "press":899.98}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.98, u'station': 1, u'humid': 93.69, u'temp': 17.4, u'time': u'2019-03-01 02:15:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:25:51", "station":1, "humid":93.68, "temp":17.46, "press":899.84}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.84, u'station': 1, u'humid': 93.68, u'temp': 17.46, u'time': u'2019-03-01 02:25:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:36:21", "station":1, "humid":93.26, "temp":17.42, "press":899.72}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.72, u'station': 1, u'humid': 93.26, u'temp': 17.42, u'time': u'2019-03-01 02:36:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:46:51", "station":1, "humid":93.37, "temp":17.34, "press":899.60}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.6, u'station': 1, u'humid': 93.37, u'temp': 17.34, u'time': u'2019-03-01 02:46:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 02:57:21", "station":1, "humid":93.50, "temp":17.32, "press":899.55}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.55, u'station': 1, u'humid': 93.5, u'temp': 17.32, u'time': u'2019-03-01 02:57:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:07:51", "station":1, "humid":93.57, "temp":17.36, "press":899.43}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.43, u'station': 1, u'humid': 93.57, u'temp': 17.36, u'time': u'2019-03-01 03:07:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:18:21", "station":1, "humid":93.58, "temp":17.40, "press":899.36}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.36, u'station': 1, u'humid': 93.58, u'temp': 17.4, u'time': u'2019-03-01 03:18:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:28:51", "station":1, "humid":93.68, "temp":17.40, "press":899.27}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.27, u'station': 1, u'humid': 93.68, u'temp': 17.4, u'time': u'2019-03-01 03:28:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:39:21", "station":1, "humid":93.70, "temp":17.46, "press":899.07}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.07, u'station': 1, u'humid': 93.7, u'temp': 17.46, u'time': u'2019-03-01 03:39:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 03:49:51", "station":1, "humid":93.62, "temp":17.51, "press":899.08}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.08, u'station': 1, u'humid': 93.62, u'temp': 17.51, u'time': u'2019-03-01 03:49:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:00:21", "station":1, "humid":93.60, "temp":17.34, "press":898.96}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 898.96, u'station': 1, u'humid': 93.6, u'temp': 17.34, u'time': u'2019-03-01 04:00:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:10:51", "station":1, "humid":94.11, "temp":17.28, "press":898.95}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 898.95, u'station': 1, u'humid': 94.11, u'temp': 17.28, u'time': u'2019-03-01 04:10:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:21:21", "station":1, "humid":93.96, "temp":17.43, "press":898.83}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 898.83, u'station': 1, u'humid': 93.96, u'temp': 17.43, u'time': u'2019-03-01 04:21:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:31:51", "station":1, "humid":93.88, "temp":17.48, "press":899.17}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.17, u'station': 1, u'humid': 93.88, u'temp': 17.48, u'time': u'2019-03-01 04:31:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:42:21", "station":1, "humid":93.91, "temp":17.45, "press":899.16}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.16, u'station': 1, u'humid': 93.91, u'temp': 17.45, u'time': u'2019-03-01 04:42:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 04:52:51", "station":1, "humid":93.78, "temp":17.43, "press":899.17}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.17, u'station': 1, u'humid': 93.78, u'temp': 17.43, u'time': u'2019-03-01 04:52:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:03:21", "station":1, "humid":93.93, "temp":17.42, "press":899.41}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.41, u'station': 1, u'humid': 93.93, u'temp': 17.42, u'time': u'2019-03-01 05:03:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:13:51", "station":1, "humid":93.67, "temp":17.30, "press":899.52}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.52, u'station': 1, u'humid': 93.67, u'temp': 17.3, u'time': u'2019-03-01 05:13:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:24:21", "station":1, "humid":93.56, "temp":17.24, "press":899.62}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.62, u'station': 1, u'humid': 93.56, u'temp': 17.24, u'time': u'2019-03-01 05:24:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:34:51", "station":1, "humid":93.58, "temp":17.14, "press":899.94}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.94, u'station': 1, u'humid': 93.58, u'temp': 17.14, u'time': u'2019-03-01 05:34:51'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+got message
+('inserting into db', u'{ "time":"2019-03-01 05:45:21", "station":1, "humid":93.73, "temp":17.21, "press":899.76}')
+Connecting to db
+Got db conn
+('weather JSON is ', {u'press': 899.76, u'station': 1, u'humid': 93.73, u'temp': 17.21, u'time': u'2019-03-01 05:45:21'})
+got cursor 
+('packet type is', 0)
+('inserting temp packet with ', 'INSERT INTO temperature(stat_id, when_recorded, humidity, temperature, pressure) VALUES(?,?,?,?,?)')
+finished processing message
+Waiting...
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-01 11:15:00')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:09')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:10')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:10')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:10')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:10')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:10')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:10')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:20')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:21')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:21')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:23')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:24')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:33')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:34')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:35')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:36')
+got message
+finished processing message
+('Waiting...', '2019-03-01 11:53:37')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:38')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:39')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:40')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:50')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:50')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:50')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:51')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:52')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:53')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:53')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:53')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:53')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:53')
+got message
+finished processing message
+('Waiting...', '2019-03-01 17:53:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:22')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:22')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:22')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:22')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:22')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:22')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:23')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:24')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:25')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 05:55:26')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:28')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:29')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:30')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:31')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 11:55:32')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:34')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:35')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:36')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:37')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 17:55:38')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:40')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:40')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:40')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:40')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:40')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:41')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:42')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:43')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:53')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:54')
+got message
+finished processing message
+('Waiting...', '2019-03-02 23:55:55')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:55:59')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 05:56:00')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:44')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:45')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:55')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:55')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:55')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:55')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:55')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:56')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:57')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:47:58')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:08')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:08')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:08')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 15:48:09')

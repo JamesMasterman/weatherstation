@@ -1,0 +1,20 @@
+{
+  "name": "weatherstationapi",
+  "version": "1.0.0",
+  "description": "API for interacting with Upper Barron weather station data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "James Masterman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sqlite-json": "^1.1.0",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
