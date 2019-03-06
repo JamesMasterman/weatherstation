@@ -3,6 +3,7 @@ import sqlite3
 import json
 from sqlite3 import Error
 from WeatherPacket import *
+from WeatherScreen import WeatherScreen
  
 def create_connection():
     database = "weather.db"
@@ -57,15 +58,58 @@ def insertSoilPacket(cursor, station, weatherJSON):
 	      float(weatherJSON['temp']))
     cursor.execute(sql, values)
     return cursor.lastrowid
+    
+def populateLastValues(weatherScreen):
+    conn = create_connection();
+    try:
+	
+	#last temperature
+	sql = "SELECT temperature, humidity, when_recorded from temperature order by when_recorded desc limit 1";
+	cursor=conn.cursor()
+	cursor.execute(sql)
+	result_set = cursor.fetchall()
+	for row in result_set:
+	    weatherScreen.setTemp(float(row[0]))
+	    weatherScreen.setHumidity(float(row[1]))
+	    weatherScreen.setLastUpdate(row[2])
+	    
+	#last soil
+	sql = "SELECT soil_temperature, soil_moisture, when_recorded from soil order by when_recorded desc limit 1";
+	cursor=conn.cursor()
+	cursor.execute(sql)
+	result_set = cursor.fetchall()
+	for row in result_set:
+	    weatherScreen.setSoil(float(row[0]), float(row[1]))
+	    
+        #last wind
+	sql = "SELECT max_speed, when_recorded from wind order by when_recorded desc limit 1";
+	cursor=conn.cursor()
+	cursor.execute(sql)
+	result_set = cursor.fetchall()
+	for row in result_set:
+	    weatherScreen.setWind(float(row[0]))
+	    
+	#last rain
+	sql = "SELECT todays_rain, when_recorded from rain order by when_recorded desc limit 1";
+	cursor=conn.cursor()
+	cursor.execute(sql)
+	result_set = cursor.fetchall()
+	for row in result_set:
+	    weatherScreen.setRain(float(row[0]))
+	    
+	conn.close()
+	
+    except Error as error:
+	print("DB select failed with error ", error)
+	return
+    return
  
 def saveWeatherpacketToDB(weatherPacket):
 
     if(weatherPacket.JSON is None):
 	return
 	
-    
     conn = create_connection();
-   
     conn.isolation_level = None
     try:
 	weatherJSON = json.loads(weatherPacket.JSON)
@@ -82,8 +126,10 @@ def saveWeatherpacketToDB(weatherPacket):
 	elif(weatherPacket.dataType == SOIL_PACKET):
 	    insertSoilPacket(cursor, weatherPacket.station, weatherJSON)
 	
+	conn.close()
+    
     except sql.Error as error:
-	print("DB insert failed! with error ", error)
+	print("DB insert failed with error ", error)
 	return
 
 

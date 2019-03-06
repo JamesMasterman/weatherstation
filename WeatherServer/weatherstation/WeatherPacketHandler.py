@@ -19,6 +19,7 @@ def parseWeatherPacket(rawPacket):
 	packet = WeatherPacket()
 	state = PARSE_STATE_INIT
 	ubyteData = array.array("B",rawPacket)
+	ubyteLen = len(ubyteData)
 
 	pos = 0
 	dataLength = 0

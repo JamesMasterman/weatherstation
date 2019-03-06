@@ -38,6 +38,8 @@ class WeatherScreen (threading.Thread):
         self.mLastReadingDay = -1
         self.mHumidity = 0
         self.mCurrentDisplayItem = TEMPERATURE
+        self.mRunning = True
+    
         
         # Turn backlight on
         self.mLcd.set_backlight(0)
@@ -70,6 +72,31 @@ class WeatherScreen (threading.Thread):
             
         return
     
+    def setTemp(self, temp):
+        self.mMinAir = temp
+        self.mMaxAir = temp
+        return
+        
+    def setHumidity(self, humid):
+        self.mHumidity = humid
+        return
+        
+    def setLastUpdate(self, lastUpdate):
+        self.mLastReadingStr = lastUpdate
+        return
+        
+    def setSoil(self, temp, moisture):
+        self.mSoilMoisture = moisture
+        self.mSoilTemperature = temp
+        return
+        
+    def setWind(self, wind_max):
+        self.mWind = wind_max*3.6
+        return
+        
+    def setRain(self, todays_rain):
+        self.mDailyRain = todays_rain
+        return
         
     def update(self, weatherPacket):
         
@@ -130,7 +157,7 @@ class WeatherScreen (threading.Thread):
         return
                     
     def finishScreen(self):
-        exitFlag = 1
+        self.mRunning = False
         return
               
     def resetTotals(self):
@@ -139,8 +166,8 @@ class WeatherScreen (threading.Thread):
         return
     
     def getWindDirection(self, windBearing):
-        if(windBearing > 337.5 and windBearing <= 22.5):
-            return "N"
+        if(windBearing > 292.5 and windBearing <=337.5):
+            return "NW"
         elif(windBearing >22.5 and windBearing <=67.5):
             return "NE"
         elif(windBearing >67.5 and windBearing <=112.5):
@@ -154,12 +181,10 @@ class WeatherScreen (threading.Thread):
         elif(windBearing >247.5 and windBearing <=292.5):
             return "W"
         else:
-            return "NW"
+            return "N"
             
     def run(self):
-        while True:
-            if exitFlag:
-                threadName.exit()
+        while self.mRunning:
             self.cycleDisplay()
             time.sleep(5)
             

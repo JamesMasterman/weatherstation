@@ -3588,3 +3588,2138 @@ finished processing message
 got message
 finished processing message
 ('Waiting...', '2019-03-03 15:48:09')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:11')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:11')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:12')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:13')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:14')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+got message
+finished processing message
+('Waiting...', '2019-03-03 21:48:15')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-04 18:00:57')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-04 18:12:09')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-04 19:04:01')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:03')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:04')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:05')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:06')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 00:11:07')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:09')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:10')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:11')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 06:11:12')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:14')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:15')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:16')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 12:11:17')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:19')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:20')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:21')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-05 18:11:22')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:24')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:24')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:24')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:24')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:24')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:24')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:25')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:26')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:27')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:28')
+got message
+finished processing message
+('Waiting...', '2019-03-06 00:11:28')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-06 15:05:46')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-06 20:23:35')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-06 21:08:35')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:09:56')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:12:25')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:16:51')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:16:51')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:16:51')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:16:51')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:16:51')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:01')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:01')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:01')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:01')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:01')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:02')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:03')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:04')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:17:05')
+Creating socket....
+Opening socket....
+Opened socket at address 192.168.100.9 and port 9765
+('Waiting...', '2019-03-06 21:33:43')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-06 21:34:57')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:07')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:08')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:09')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
+Got data
+got message
+finished processing message
+('Waiting...', '2019-03-07 03:17:10')
