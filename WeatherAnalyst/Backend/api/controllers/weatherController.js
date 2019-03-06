@@ -5,20 +5,58 @@ const sqliteJson = require('sqlite-json');
 
 exports.read_temp_today = function(req, res) {
     let jsonExporter = openDB();
-    var today = new Date();
-    var todayStr = today.getFullYear() + '-'
+    let today = new Date();
+    let todayStr = today.getFullYear() + '-'
                 + ('0' + (today.getMonth()+1)).slice(-2) + '-'
                 + ('0' + today.getDate()).slice(-2);
     
-    var whereClause = "when_recorded > '" + todayStr + "' AND stat_id = " + req.params.stationid;
-    jsonExporter.json({table: 'temperature', where: whereClause}, function (err, json) {
+    let sql = "Select temperature, humidity, pressure, when_recorded \
+               from temperature where when_recorded > '" + todayStr + 
+               "' and stat_id = " + req.params.stationid;
+    console.log(sql);
+    jsonExporter.json(sql, function (err, json) {
             if (err) {
-                res.status(401).send(err);
+                console.log(err);
+                res.status(501).send("Error getting todays temperature");
             }
+            res.header("Content-Type", "application/json");
             res.send(json);
         });
+};
 
-    db.close();
+exports.read_temp_lastweek = function(req, res) {
+    let jsonExporter = openDB();
+    
+    let sql = "Select temperature, humidity, pressure, when_recorded \
+               from temperature where when_recorded  > (SELECT DATETIME('now', '-7 day'))\
+               and stat_id=" + req.params.stationid;
+    console.log(sql);
+    jsonExporter.json(sql, function (err, json) {
+            if (err) {
+                console.log(err);
+                res.status(501).send("Error getting this weeks temperature");
+            }
+            res.header("Content-Type", "application/json");
+            res.send(json);
+        });
+};
+
+exports.read_temp_range = function(req, res) {
+    let jsonExporter = openDB();
+    
+    let start
+    let sql = "Select temperature, humidity, pressure, when_recorded \
+               from temperature where when_recorded  > (SELECT DATETIME('now', '-" + req.query.day + " day')) \
+               and stat_id=" + req.query.stationid;
+    console.log(sql);
+    jsonExporter.json(sql, function (err, json) {
+            if (err) {
+                console.log(err);
+                res.status(501).send("Error getting temp range");
+            }
+            res.header("Content-Type", "application/json");
+            res.send(json);
+        });
 };
 
 

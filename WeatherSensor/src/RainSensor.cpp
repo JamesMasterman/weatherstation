@@ -32,6 +32,7 @@ void RainSensor::reset()
 
 void RainSensor::setup()
 {
+  mLastRainIRQ = 0;
   pinMode(RAIN_PIN, INPUT_PULLUP); // input from rain gauge sensor
 }
 

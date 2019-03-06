@@ -28,7 +28,7 @@ unsigned long sendTime = 0;
 
 unsigned long lastSlowLoop = 0;
 unsigned long lastVerySlowLoop = 0;
-
+int sendAttempts = 0;
 bool sensorsReset = false;
 
 WindSensor* windSensor = new WindSensor(STATION_ID);
@@ -195,8 +195,14 @@ void loop()
         if(waitFor(WiFi.ready, WIFI_TIMEOUT_MS)){
             publishAll();
             sendTime = millis();
+            sendAttempts = 0;
         }else{
-          sendTime = millis() - PUBLISH_TIME_MS + SEND_TIME_DELAY; //try again soon if we cant connect
+          if(sendAttempts < 5){
+            sendAttempts++;
+            sendTime = millis() - PUBLISH_TIME_MS + SEND_TIME_DELAY*sendAttempts; //try again soon if we cant connect
+          }else{
+            sendTime = millis() + PUBLISH_TIME_MS;
+          }
         }
 
         //turn off the wifi to save battery
