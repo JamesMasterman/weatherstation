@@ -26,6 +26,11 @@ RainSensor::~RainSensor()
 
 void RainSensor::reset()
 {
+  //If we haven't sampled rollover hour, do it now
+  if(mCurrentHour != 0){
+    sample();
+  }
+
   mRainToday = 0;
   mRain1Hour = 0;
 }

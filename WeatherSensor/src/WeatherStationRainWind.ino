@@ -126,15 +126,15 @@ void fastLoop()
 {
   //Sample the wind direction (analog)
   windSensor->sample();
+
+  //sample rain
+  rainSensor->sample();
 }
 
 //Once per 10 minutes
 void slowLoop()
 {
   lightSensor->sample();
-
-  //sample rain
-  rainSensor->sample();
 
   //Get readings from all onboard sensors
   onboardSensors->sample();
