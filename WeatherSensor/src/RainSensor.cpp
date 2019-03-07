@@ -7,7 +7,8 @@ const float MM_PER_SWITCH = 0.2794; //mm of rain per tick of the sensor
 const int MAX_RECORDS = 10;
 RainSensor::RainSensor(int stationID): SensorBase(stationID)
 {
-  reset();
+  mRainToday = 0;
+  mRain1Hour = 0;
   mCurrentHour = Time.hour(Time.now());
   mRecords = new RainRecord*[MAX_RECORDS];
   for(int i=0;i<MAX_RECORDS;i++){
@@ -27,10 +28,7 @@ RainSensor::~RainSensor()
 void RainSensor::reset()
 {
   //If we haven't sampled rollover hour, do it now
-  if(mCurrentHour != 0){
-    sample();
-  }
-
+  sample();
   mRainToday = 0;
   mRain1Hour = 0;
 }

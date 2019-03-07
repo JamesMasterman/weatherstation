@@ -193,8 +193,8 @@ void loop()
         WiFi.on();
         WiFi.connect();
         if(waitFor(WiFi.ready, WIFI_TIMEOUT_MS)){
-            publishAll();
             sendTime = millis();
+            publishAll();
             sendAttempts = 0;
         }else{
           if(sendAttempts < 5){
