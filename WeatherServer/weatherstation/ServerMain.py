@@ -62,13 +62,14 @@ def main():
 					
 				print ("finished processing message")
 			
-			except Error as error:
+			except Exception as error: 
+				now = datetime.now()
 				print("Socket error...", error, now.strftime("%Y-%m-%d %H:%M:%S"))
 				sys.stdout.flush()
 				sock.bind((UDP_IP, LOCAL_UDP_PORT))
 			
 				
-	except Error as error:
+	except Exception as error:
 		print(error)	
 		sys.stdout.flush()	
 	finally:

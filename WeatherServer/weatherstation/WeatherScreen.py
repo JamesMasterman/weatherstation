@@ -35,10 +35,11 @@ class WeatherScreen (threading.Thread):
         self.mSoilTemperature = 0.0
         self.mLastReadingStr = "01:01 01-01-19"
         self.mLcd = LCDPanel.Adafruit_CharLCDBackpack()
-        self.mLastReadingDay = -1
         self.mHumidity = 0
         self.mCurrentDisplayItem = TEMPERATURE
         self.mRunning = True
+        self.mLastPacketTime = datetime(2000,1,1)
+        self.mLastPacketType = UNKNOWN_PACKET
     
         
         # Turn backlight on
@@ -104,20 +105,29 @@ class WeatherScreen (threading.Thread):
             threadlock.acquire()
             
             timeNow = datetime.now()
-            self.mLastReadingStr = timeNow.strftime("%H:%M %d-%m-%y")
             weatherJSON = json.loads(weatherPacket.JSON)
+            packetTimeStr = str(weatherJSON['time'])
+            packetTime = datetime.strptime(packetTimeStr, '%Y-%m-%d %H:%M:%S')
             
-            if(weatherPacket.dataType == TEMP_PACKET):
-                self.handleTempPacket(weatherJSON)
-            elif(weatherPacket.dataType == RAIN_PACKET):
-                self.handleRainPacket(weatherJSON)
-            elif(weatherPacket.dataType == SOIL_PACKET):
-                self.handleSoilPacket(weatherJSON)
-            elif(weatherPacket.dataType == WIND_PACKET):
-                self.handleWindPacket(weatherJSON)
+            if(packetTime > self.mLastPacketTime or weatherPacket.dataType != self.mLastPacketType):
+                self.mLastPacketTime = packetTime
+                self.mLastPacketType = weatherPacket.dataType
+                if(packetTime.day != timeNow.day):
+                    self.resetTotals()
+                    
+                self.mLastReadingStr = timeNow.strftime("%H:%M %d-%m-%y")
+                if(weatherPacket.dataType == TEMP_PACKET):
+                    self.handleTempPacket(weatherJSON)
+                elif(weatherPacket.dataType == RAIN_PACKET):
+                    self.handleRainPacket(weatherJSON)
+                elif(weatherPacket.dataType == SOIL_PACKET):
+                    self.handleSoilPacket(weatherJSON)
+                elif(weatherPacket.dataType == WIND_PACKET):
+                    self.handleWindPacket(weatherJSON)
+                    
             threadlock.release()
             
-        except Error as error:
+        except Exception as error:
             print(error)
             threadlock.release()
         
@@ -125,14 +135,6 @@ class WeatherScreen (threading.Thread):
         
 
     def handleTempPacket(self, weatherJSON):
-        
-        lastReadingStr = str(weatherJSON['time'])
-        packetTime = datetime.strptime(lastReadingStr, '%Y-%m-%d %H:%M:%S')
-
-        if(self.mLastReadingDay != packetTime.day):
-            self.mLastReadingDay = packetTime.day
-            self.resetTotals()
-                
         temp = float(weatherJSON['temp'])
         if(self.mMaxAir < temp):
             self.mMaxAir = temp

@@ -13,4 +13,17 @@ module.exports = function(app) {
 
   app.route('/temperature/range/')
     .get(weatherApi.read_temp_range)
+
+  //rain routes
+  app.route('/rain/lastweek/:stationid')
+    .get(weatherApi.read_temp_lastweek);
+
+  //soil routes
+  app.route('/soil/lastweek/:stationid')
+  .get(weatherApi.read_soil_lastweek);
+
+  //wind routes
+  app.route('/wind/lastweek/:stationid')
+  .get(weatherApi.read_wind_lastweek);
+
 };

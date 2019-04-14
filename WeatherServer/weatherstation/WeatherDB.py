@@ -4,13 +4,15 @@ import json
 from sqlite3 import Error
 from WeatherPacket import *
 from WeatherScreen import WeatherScreen
+
+lastPacketTime = "2009-01-01 01:01"
  
 def create_connection():
     database = "weather.db"
     try:
         conn = sqlite3.connect(database)
         return conn
-    except Error as e:
+    except Exception as e:
         print(e)
  
     return None
@@ -99,38 +101,43 @@ def populateLastValues(weatherScreen):
 	    
 	conn.close()
 	
-    except Error as error:
+    except Exception as error:
 	print("DB select failed with error ", error)
 	return
     return
  
 def saveWeatherpacketToDB(weatherPacket):
-
+    global lastPacketTime
+    
     if(weatherPacket.JSON is None):
-	return
-	
+        return
+    
     conn = create_connection();
     conn.isolation_level = None
     try:
-	weatherJSON = json.loads(weatherPacket.JSON)
-	cursor = conn.cursor()
+        weatherJSON = json.loads(weatherPacket.JSON)
     
-	if(weatherPacket.dataType == RAIN_PACKET):
-	    insertRainPacket(cursor, weatherPacket.station, weatherJSON)
-	elif(weatherPacket.dataType == TEMP_PACKET):
-	    insertTempPacket(cursor, weatherPacket.station, weatherJSON) 
-	elif(weatherPacket.dataType == WIND_PACKET):
-	    insertWindPacket(cursor, weatherPacket.station, weatherJSON)
-	elif(weatherPacket.dataType == LIGHT_PACKET):
-	    insertLightPacket(cursor, weatherPacket.station, weatherJSON)
-	elif(weatherPacket.dataType == SOIL_PACKET):
-	    insertSoilPacket(cursor, weatherPacket.station, weatherJSON)
+        if(weatherJSON['time'] != lastPacketTime):
+            cursor = conn.cursor()
+            if(weatherPacket.dataType == RAIN_PACKET):
+                insertRainPacket(cursor, weatherPacket.station, weatherJSON)
+            elif(weatherPacket.dataType == TEMP_PACKET):
+                insertTempPacket(cursor, weatherPacket.station, weatherJSON) 
+            elif(weatherPacket.dataType == WIND_PACKET):
+                insertWindPacket(cursor, weatherPacket.station, weatherJSON)
+            elif(weatherPacket.dataType == LIGHT_PACKET):
+                insertLightPacket(cursor, weatherPacket.station, weatherJSON)
+            elif(weatherPacket.dataType == SOIL_PACKET):
+                insertSoilPacket(cursor, weatherPacket.station, weatherJSON)
+        
+            lastPacketTime = weatherJSON['time']
+    
+        conn.close()
+    
+    except Exception as error:
+        print("DB insert failed with error ", error)
 	
-	conn.close()
-    
-    except sql.Error as error:
-	print("DB insert failed with error ", error)
-	return
+    return
 
 
  

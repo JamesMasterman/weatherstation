@@ -160,14 +160,14 @@ void loop()
       fastLoop();
 
       //Once per 10 mins for slow loop
-      if((millis() - lastSlowLoop) > SLOW_LOOP_TIME_MS)
+      if((millis() - lastSlowLoop) >= SLOW_LOOP_TIME_MS)
       {
         slowLoop();
         lastSlowLoop = millis();
       }
 
       //Once per 2hrs hour for very slow loop
-      if((millis() - lastVerySlowLoop) > REALLY_SLOW_LOOP_TIME_MS)
+      if((millis() - lastVerySlowLoop) >= REALLY_SLOW_LOOP_TIME_MS)
       {
         verySlowLoop();
         lastVerySlowLoop = millis();
@@ -202,6 +202,7 @@ void loop()
             sendTime = millis() - PUBLISH_TIME_MS + SEND_TIME_DELAY*sendAttempts; //try again soon if we cant connect
           }else{
             sendTime = millis() + PUBLISH_TIME_MS;
+            sendAttempts = 0;
           }
         }
 
