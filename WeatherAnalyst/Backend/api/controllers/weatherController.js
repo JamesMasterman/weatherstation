@@ -61,6 +61,10 @@ function sendJSONResponse(sql, res){
             res.status(501).send("Error obtaining weather data");
         }
         res.header("Content-Type", "application/json");
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+        res.header('Access-Control-Allow-Headers', 'Content-Type');
+    
         res.send(json);
     });
 }

@@ -1,0 +1,6 @@
+<h2>Temperature List</h2>
+<ul class="temperatures">
+  <li *ngFor="let p of temperatures; let i=index;">
+    <span class="badge">{{i+1}}</span> {{p.temperature}}
+  </li>
+</ul>

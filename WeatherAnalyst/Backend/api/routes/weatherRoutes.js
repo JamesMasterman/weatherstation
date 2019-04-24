@@ -5,25 +5,25 @@ module.exports = function(app) {
   // weather api Routes
 
   //Temperature routes
-  app.route('/temperature/today/:stationid')
+  app.route('/api/v1/temperature/today/:stationid')
     .get(weatherApi.read_temp_today);
 
-  app.route('/temperature/lastweek/:stationid')
+  app.route('/api/v1/temperature/lastweek/:stationid')
     .get(weatherApi.read_temp_lastweek);
 
-  app.route('/temperature/range/')
+  app.route('/api/v1/temperature/range/')
     .get(weatherApi.read_temp_range)
 
   //rain routes
-  app.route('/rain/lastweek/:stationid')
+  app.route('/api/v1/rain/lastweek/:stationid')
     .get(weatherApi.read_temp_lastweek);
 
   //soil routes
-  app.route('/soil/lastweek/:stationid')
+  app.route('/api/v1/soil/lastweek/:stationid')
   .get(weatherApi.read_soil_lastweek);
 
   //wind routes
-  app.route('/wind/lastweek/:stationid')
+  app.route('/api/v1/wind/lastweek/:stationid')
   .get(weatherApi.read_wind_lastweek);
 
 };
