@@ -1,0 +1,145 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">brightness_low</i>
+                      </div>
+                      <p class="card-category">Temperature</p>
+                      <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="text-success">
+                                <th>Max</th>
+                                <th>Min</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3 class="card-title">{{weatherSummary.temp_max| number:'1.0-1'}} C</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="card-title">{{weatherSummary.temp_min| number:'1.0-1'}} C</h3>
+                                    </td>
+                                </tr>
+                    
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                        <div class="stats">
+                           Since midnight. Last reading {{weatherSummary.last_reading}}
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+                <div class="card card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">toys</i>
+                        </div>
+                        <p class="card-category">Wind</p>
+                        <div class="card-body table-responsive">
+                              <table class="table table-hover">
+                                  <thead class="text-success">
+                                      <th>Max</th>
+                                      <th>Average</th>
+                                      <th>Direction</th>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <h3 class="card-title">{{weatherSummary.wind_max| number:'1.0-1'}}</h3>
+                                          </td>
+                                          <td>
+                                              <h3 class="card-title">{{weatherSummary.wind_avg| number:'1.0-1'}}</h3>
+                                          </td>
+                                          
+                                          <td>
+                                              <h3 class="card-title">{{weatherSummary.wind_direction}}</h3>
+                                          </td>
+                                      </tr>
+                          
+                                  </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            Since midnight. Last reading {{weatherSummary.last_reading}}
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+              <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">opacity</i>
+                      </div>
+                      <p class="card-category">Rainfall</p>
+                      <h3 class="card-title">{{weatherSummary.total_rain | number:'1.0-1'}}mm</h3>
+                  </div>
+                  <div class="card-footer">
+                      <div class="stats">
+                          Since midnight. Last reading {{weatherSummary.last_reading}}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+              <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">cloud_queue</i>
+                      </div>
+                      <p class="card-category">Humidity</p>
+                      <h3 class="card-title">{{weatherSummary.avg_humidity | number:'1.0-1'}}%</h3>
+                  </div>
+                  <div class="card-footer">
+                        <div class="stats">
+                            Since midnight. Last reading {{weatherSummary.last_reading}}
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+              <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                      <div class="card-icon">
+                          <i class="material-icons">pets</i>
+                      </div>
+                      <p class="card-category">Soil</p>
+                      <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="text-success">
+                                <th>Temp</th>
+                                <th>Moisture</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3 class="card-title">{{weatherSummary.soil_temp| number:'1.0-1'}} C</h3>
+                                    </td>
+                                    <td>
+                                        <h3 class="card-title">{{weatherSummary.soil_moist| number:'1.0-1'}} %</h3>
+                                    </td>
+                                </tr>
+                    
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                        <div class="stats">
+                           Since midnight. Last reading {{weatherSummary.last_reading}}
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>

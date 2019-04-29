@@ -3,6 +3,9 @@ module.exports = function(app) {
   var weatherApi = require('../controllers/weatherController');
 
   // weather api Routes
+  //summary weather
+  app.route('/api/v1/today/:stationid')
+  .get(weatherApi.read_today_summary);
 
   //Temperature routes
   app.route('/api/v1/temperature/today/:stationid')

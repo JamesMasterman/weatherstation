@@ -9,35 +9,32 @@ import { ChartMultiDataModel } from '../../models/chart-multi-data-model';
   templateUrl: './temperature-chart.component.html',
   styleUrls: ['./temperature-chart.component.css']
 })
+
 export class TemperatureChartComponent implements OnInit, OnChanges{
 
     @Input()
     chartData: any[];
 
-    constructor(public rest:WeatherserviceService, private route: ActivatedRoute, private router: Router) { 
-    }
+    constructor(public rest:WeatherserviceService, private route: ActivatedRoute, private router: Router) { }
 
     ngOnInit() {
       this.getWeeklyTemperatures();
     }
 
-    ngOnChanges(): void {
-    
-    }
+    ngOnChanges(): void {}
 
     getWeeklyTemperatures(): void {
       this.rest.getLastWeekTemperature(1).subscribe((data: TemperatureModel[]) => {
         this.chartData = []
-
-        //converts to ngx line chart data format
         var series  = new ChartMultiDataModel("temp",data);
         this.chartData.push(series);
       });
     }
 
-    view: any[] = [700, 300];
-
-    // options
+    // chart options
+    ChartWidth = 700;
+    ChartHeight = 300;
+    view: any[] = [this.ChartWidth, this.ChartHeight];
     showXAxis = true;
     showYAxis = true;
     gradient = true;

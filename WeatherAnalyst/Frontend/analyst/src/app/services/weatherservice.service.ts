@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
 import { TemperatureModel } from '../models/temperature.model';
+import { DailySummaryModel } from '../models/dailysummary.model';
 
 
 const endpoint = 'http://localhost:3000/api/v1/';
@@ -25,7 +26,18 @@ export class WeatherserviceService {
       map(res => 
         {
          return <TemperatureModel[]>res;
-        }));
+        })
+    );
+  }
+
+  getTodaysSummary(id): Observable<DailySummaryModel>{
+    return this.http.get(endpoint + 'today/' + id).pipe(
+      map(res=>
+        {
+          console.log(res);
+          return <DailySummaryModel>res
+        })
+    );
   }
   
   getLastWeekRain(id): Observable<any> {
