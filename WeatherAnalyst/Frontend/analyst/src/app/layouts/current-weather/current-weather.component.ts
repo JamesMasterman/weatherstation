@@ -20,7 +20,7 @@ export class CurrentWeatherComponent implements OnInit, OnChanges{
     wind_max: 0,
     wind_avg: 0,
     wind_direction: "N",
-    last_reading: ""
+    last_reading: "" 
   }
 
   constructor(public rest:WeatherserviceService, private route: ActivatedRoute, private router: Router) { }

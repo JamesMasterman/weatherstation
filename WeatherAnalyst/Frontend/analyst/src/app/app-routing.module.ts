@@ -8,7 +8,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 const routes: Routes =[
   {
     path: '',
-    redirectTo: 'thisweek',
+    redirectTo: 'current',
     pathMatch: 'full',
   }, 
   {

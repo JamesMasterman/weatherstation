@@ -51,6 +51,22 @@
     padding: $padding-card-body-y $padding-card-body-x;
   }
 
+  .card-footer-large
+  {
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size:14px;
+    text-align: center;
+  }
+
+  .chart-wrapper { 
+    display: flex; 
+    overflow: hidden; 
+    height: 300px;
+  }
+
   .card-body {
       & + .card-footer{
         padding-top: 0rem;
@@ -349,7 +365,7 @@
   }
 
   .card-body{
-    padding: $padding-card-body-y 20px;
+    padding: 2px 2px;
     position: relative;
 
   }
@@ -493,7 +509,10 @@
       &:not(.card-header-icon):not(.card-header-text):not(.card-header-image){
         border-radius: $border-radius-base;
         margin-top: -20px;
-        padding: 20px;
+        padding-top: 5px;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-bottom: -5px;
       }
 
       .card-icon,

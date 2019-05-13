@@ -1,16 +1,29 @@
-<ngx-charts-line-chart
-      [view]="view"
+<div class="card card-stats">
+      <div class="card-header card-header-success">
+            <div class="ct-chart" id="temperatureChart"><h5>Temperature (°C)</h5></div>
+      </div>
+      <br>
+      <div class="chart-wrapper">
+      <ngx-charts-line-chart
       [scheme]="colorScheme"
       [results]="chartData"
       [gradient]="gradient"
       [xAxis]="showXAxis"
       [yAxis]="showYAxis"
       [legend]="showLegend"
-      [showXAxisLabel]="showXAxisLabel"
-      [showYAxisLabel]="showYAxisLabel"
-      [xAxisLabel]="xAxisLabel"
-      [yAxisLabel]="yAxisLabel"
       [autoScale]="autoScale"
       [timeline]="timeline"
       (select)="onSelect($event)">
-</ngx-charts-line-chart>
+      </ngx-charts-line-chart>
+      </div>
+      <div class="card-footer-large">
+            <div class="stats">
+                 <span class="text-info">Minimum </span>{{minTemp| number:'1.0-1'}}°C on <span class="text-info">{{coldestDay}}</span> | 
+                  <span class="text-info"></span>
+                  <span class="text-danger">Maximum </span>{{maxTemp| number:'1.0-1'}}°C on <span class="text-danger">{{hottestDay}}</span>    
+            </div>
+      </div>
+</div>
+
+
+     
