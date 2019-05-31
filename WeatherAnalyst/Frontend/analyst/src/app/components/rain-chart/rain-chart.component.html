@@ -1,0 +1,35 @@
+<div class="card card-stats">
+  <div class="card-header card-header-info">
+    <div class="ct-chart" id="rainChart">
+      <h5>Rainfall (mm)</h5>
+    </div>
+  </div>
+  <br>
+  <div class="chart-wrapper">
+    <ngx-charts-line-chart [yScaleMin]="yscaleMin" [scheme]="colorScheme" [results]="chartData" [gradient]="gradient"
+      [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [autoScale]="autoScale" [timeline]="timeline"
+      [roundDomains]="roundDomains" (select)="onSelect($event)">
+    </ngx-charts-line-chart>
+  </div>
+  <div class="card-footer-large">
+    <table class="table table-shopping">
+      <thead>
+        <th class="text-info" *ngFor="let day of periodDays">
+          {{day}}
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td *ngFor="let total of dailyRainTotal">
+            {{total | number:'1.0-1'}}mm
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <div class="stats">
+      <span class="text-info">Total rain this week </span>{{totalRain| number:'1.0-1'}}mm |
+      <span class="text-info">Wettest day </span> {{wettestDay}}
+    </div>
+  </div>
+</div>

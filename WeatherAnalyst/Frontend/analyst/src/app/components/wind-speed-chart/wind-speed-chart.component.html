@@ -1,0 +1,36 @@
+<div class="card card-stats">
+    <div class="card-header card-header-success">
+      <div class="ct-chart" id="windChart">
+        <h5>Wind speed (km/hr)</h5>
+      </div>
+    </div>
+    <br>
+    <div class="chart-wrapper">
+      <ngx-charts-line-chart [scheme]="colorScheme" [results]="chartData" [gradient]="gradient"
+        [yScaleMin]="yscaleMin" [yScaleMax]="yscaleMax" 
+        [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [autoScale]="autoScale" [timeline]="timeline"
+        [roundDomains]="roundDomains" (select)="onSelect($event)">
+      </ngx-charts-line-chart>
+    </div>
+    <div class="card-footer-large">
+      <table class="table table-shopping">
+        <thead>
+          <th class="text-success" *ngFor="let day of periodDays">
+            {{day}}
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td *ngFor="let wind of dailyMaxWind">
+              {{wind | number:'1.0-1'}}km/hr
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="stats">
+        <span class="text-success">Strongest wind this week </span>{{strongestWind| number:'1.0-1'}}km/hr
+        <span class="text-success"> on </span> {{windiestDay}}
+      </div>
+    </div>
+  </div>

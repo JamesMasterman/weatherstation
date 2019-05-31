@@ -1,12 +1,14 @@
-import { TemperatureModel } from "./temperature.model";
+
 
 export class ChartDataModel
 {
-    name:Date;
+    date:Date;
+    name:string;
     value:number;
 
-    constructor(temp:TemperatureModel){
-        this.name = new Date(temp.when_recorded);
-        this.value = temp.temperature;
+    constructor(date:Date, name: string, value: number){
+        this.date = date;
+        this.name = name;
+        this.value = value;
     }
 }

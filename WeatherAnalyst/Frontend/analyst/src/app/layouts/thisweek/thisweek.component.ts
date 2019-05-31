@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {TemperatureChartComponent} from '../../components/temperature-chart/temperature-chart.component'
 
 @Component({
   selector: 'app-thisweek',
@@ -11,7 +10,4 @@ export class ThisWeekComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {};
-
-    
-
 }

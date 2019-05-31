@@ -1,0 +1,24 @@
+<div class="card card-stats">
+  <div class="card-header card-header-success">
+    <div class="ct-chart" id="rainHeatmap">
+      <h5>Rainfall (mm) - {{firstDate}} to {{lastDate}}</h5>
+    </div>
+  </div>
+  <br>
+  <div class="chart-wrapper">
+    <ngx-charts-heat-map [scheme]="colorScheme" [results]="chartData" [gradient]="gradient" [xAxis]="showXAxis"
+      [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxis" [min]="min" [max]="max"
+      [xAxisLabel]="xAxisTitle" (select)="onSelect($event)">
+      <ng-template #tooltipTemplate let-model="model">
+        <div>Rain on this day:</div>
+        <div>{{model.value| number:'1.0-1'}}mm</div>
+      </ng-template>
+    </ngx-charts-heat-map>
+  </div>
+  <div class="card-footer-large">
+    <div class="stats">
+      <span class="text-info">Wettest day </span>{{maxRain| number:'1.0-1'}}mm on <span
+        class="text-info">{{wettestDay}}</span>
+    </div>
+  </div>
+</div>

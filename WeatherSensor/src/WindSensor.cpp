@@ -7,7 +7,7 @@
 #define PI 3.14159f
 
 const int WIND_ACCUM_SIZE = 10;
-const int MAX_RECORDS = 60;
+const int MAX_RECORDS = 144;
 WindSensor::WindSensor(int stationID): SensorBase(stationID)
 {
   mWindDirAccumulator = new float[WIND_ACCUM_SIZE];
@@ -203,11 +203,11 @@ uint16_t WindSensor::convertAnalogWindDirectionReadingToBearing(int adc)
   if(adc > 2270 && adc <= 2790) angle = 0;//North
   if(adc > 3120 && adc <= 3570) angle = 45;//NE
   if(adc > 3890 && adc <= 3999) angle = 90;//East
-  if(adc > 3700 && adc <= 3890) angle = 135;//SE
+  if(adc > 3700 && adc <= 3950) angle = 135;//SE
 
   if(adc > 3570 && adc <= 3700) angle = 180;//South
   if(adc > 2790 && adc <= 2850) angle = 225;//SW
-  if(adc > 1480 && adc <= 1930) angle = 270;//West
+  if(adc > 1400 && adc <= 1930) angle = 270;//West
   if(adc > 1930 && adc <= 2270) angle = 315;//NW
 
   if(angle > 360 || angle < 0)

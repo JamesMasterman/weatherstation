@@ -2,8 +2,9 @@ import { WeatherserviceService } from '../../services/weatherservice.service';
 import { Component, OnInit, Input, ViewChild, ElementRef, OnChanges } from '@angular/core';
 import { TemperatureModel } from '../../models/temperature.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ChartMultiDataModel } from '../../models/chart-multi-data-model';
-import { ChartDataModel } from 'src/app/models/chart-data-model';
+import { ChartMultiDataModelDate } from '../../models/chart-date-multi-data-model';
+import { ChartDataModelDate } from 'src/app/models/chart-date-data-model';
+import { DAYS_OF_WEEK } from 'src/app/models/constants';
 
 @Component({
   selector: 'app-temperature-chart',
@@ -20,7 +21,6 @@ export class TemperatureChartComponent implements OnInit, OnChanges{
     hottestDay: string;
     coldestDay:string;
 
-
     constructor(public rest:WeatherserviceService, private route: ActivatedRoute, private router: Router) { }
 
     ngOnInit() {
@@ -30,32 +30,31 @@ export class TemperatureChartComponent implements OnInit, OnChanges{
     ngOnChanges(): void {}
 
     getWeeklyTemperatures(): void {
-      this.rest.getLastWeekTemperature(1).subscribe((data: TemperatureModel[]) => {
+      this.rest.getLastWeekAirTemperature(1).subscribe((data: TemperatureModel[]) => {
         this.chartData = []
-        var series  = new ChartMultiDataModel("temp",data);
+        var series = ChartMultiDataModelDate.FromTemperatureModel("temp", data);
         this.calculateMinMaxValues(series.series);
         this.chartData.push(series);
       });
     }
 
-    calculateMinMaxValues(data: ChartDataModel[]){
+    calculateMinMaxValues(data: ChartDataModelDate[]){
       var min = 100;
       var max = -100;
       var hotDay = "";
       var coldDay = "";
 
-      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      data.forEach(function(value:ChartDataModel){
+      data.forEach(function(value:ChartDataModelDate){
         if(value.value > max){
           max  = value.value;
           var d = value.name;
-          hotDay = days[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
+          hotDay = DAYS_OF_WEEK[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
         }
 
         if(value.value < min){
           min = value.value;
           var d = value.name;
-          coldDay = days[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
+          coldDay = DAYS_OF_WEEK[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
         }
       });
 
@@ -63,6 +62,8 @@ export class TemperatureChartComponent implements OnInit, OnChanges{
       this.maxTemp = max;
       this.hottestDay = hotDay;
       this.coldestDay = coldDay;
+      this.yscaleMin = min - 1;
+      this.yscaleMax = max + 1;
     }
 
     // chart options
@@ -73,7 +74,8 @@ export class TemperatureChartComponent implements OnInit, OnChanges{
     timeline = true;
     autoscale = true;
     roundDomains = true;
-
+    yscaleMin = 0;
+    yscaleMax = 30;
 
     colorScheme = {
       domain: ['#5AA454']

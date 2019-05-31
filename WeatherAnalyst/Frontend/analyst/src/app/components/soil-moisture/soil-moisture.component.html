@@ -1,0 +1,22 @@
+<div class="card card-stats">
+  <div class="card-header card-header-success">
+    <div class="ct-chart" id="soilChart">
+      <h5>Soil Moisture (%)</h5>
+    </div>
+  </div>
+  <br>
+  <div class="chart-wrapper">
+    <ngx-charts-line-chart [yScaleMin]="yscaleMin" [scheme]="colorScheme" [results]="chartData" [gradient]="gradient"
+      [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [autoScale]="autoScale" [timeline]="timeline"
+      [roundDomains]="roundDomains" (select)="onSelect($event)">
+    </ngx-charts-line-chart>
+  </div>
+  <div class="card-footer-large">
+    <div class="stats">
+      <span class="text-danger">Dryest </span>{{minMoisture| number:'1.0-1'}}% on <span
+        class="text-danger">{{dryestDay}}</span> |
+      <span class="text-success">Wettest </span>{{maxMoisture| number:'1.0-1'}}% on <span
+        class="text-success">{{wettestDay}}</span>
+    </div>
+  </div>
+</div>

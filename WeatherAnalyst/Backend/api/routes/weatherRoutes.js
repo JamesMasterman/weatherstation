@@ -14,12 +14,18 @@ module.exports = function(app) {
   app.route('/api/v1/temperature/lastweek/:stationid')
     .get(weatherApi.read_temp_lastweek);
 
+  app.route('/api/v1/temperature/lastquarter/:stationid')
+    .get(weatherApi.read_temp_lastquarter_max);
+
   app.route('/api/v1/temperature/range/')
     .get(weatherApi.read_temp_range)
 
   //rain routes
   app.route('/api/v1/rain/lastweek/:stationid')
-    .get(weatherApi.read_temp_lastweek);
+    .get(weatherApi.read_rain_lastweek);
+
+  app.route('/api/v1/rain/lastquarter/:stationid')
+    .get(weatherApi.read_rain_lastquarter);
 
   //soil routes
   app.route('/api/v1/soil/lastweek/:stationid')

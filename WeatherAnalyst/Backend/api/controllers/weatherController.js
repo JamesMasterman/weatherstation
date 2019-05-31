@@ -42,7 +42,7 @@ exports.read_today_summary = function(req, res) {
         
         db.serialize(()=>{
             sql = "Select MAX(temperature) as temp_max, MIN(temperature) as temp_min, \
-                        AVG(humidity) as avg_humidity from temperature where when_recorded > '" 
+                        AVG(humidity) as avg_humidity from temperature where when_recorded >= '" 
                         + todayStr + "' and stat_id = " 
                         + req.params.stationid;
 
@@ -56,8 +56,10 @@ exports.read_today_summary = function(req, res) {
                 response.avg_humidity = row.avg_humidity;       
             });
 
-            sql = "Select MAX(todays_rain) as total_rain from rain where when_recorded >= '" 
-            + todayStr + "' and stat_id = " + req.params.stationid;
+            sql = "Select todays_rain as total_rain from rain\
+                    where when_recorded = (select MAX(when_recorded) from rain)\
+                    and stat_id = " + req.params.stationid;
+            
             db.get(sql, [], (err, row) => {
                 if (err) {
                     return console.error(err.message);
@@ -66,7 +68,8 @@ exports.read_today_summary = function(req, res) {
                 response.total_rain = row.total_rain;     
             });
 
-            sql = "Select AVG(soil_temperature) as soil_temp, AVG(soil_moisture) as soil_moist from soil where when_recorded >= '" + todayStr + "' and stat_id = " + req.params.stationid;
+            sql = "Select AVG(soil_temperature) as soil_temp, AVG(soil_moisture) as soil_moist\
+                    from soil where when_recorded >= '" + todayStr + "' and stat_id = " + req.params.stationid;
             db.get(sql, [], (err, row) => {
                 if (err) {
                     return console.error(err.message);
@@ -149,8 +152,15 @@ exports.read_temp_today = function(req, res){
 
 exports.read_temp_lastweek = function(req, res) {
     let sql = "Select temperature, humidity, pressure, when_recorded \
-               from temperature where when_recorded  > (SELECT DATETIME('now', '-7 day'))\
+               from temperature where when_recorded  > (SELECT DATETIME('now', '-6 day'))\
                and stat_id=" + req.params.stationid;
+    excecuteAndSendJSONResponse(sql, res);
+};
+
+exports.read_temp_lastquarter_max = function(req, res) {
+    let sql = "Select MAX(temperature) as temperature, when_recorded \
+               from temperature where when_recorded  > (SELECT DATETIME('now', '-90 day'))\
+               and stat_id=" + req.params.stationid + " GROUP BY strftime(\"%d-%m-%Y\", when_recorded) ORDER BY when_recorded";
     excecuteAndSendJSONResponse(sql, res);
 };
 
@@ -163,21 +173,28 @@ exports.read_temp_range = function(req, res) {
 
 exports.read_soil_lastweek = function(req, res) {
     let sql = "Select soil_moisture, soil_temperature, when_recorded \
-               from soil where when_recorded  > (SELECT DATETIME('now', '-7 day'))\
+               from soil where when_recorded  > (SELECT DATETIME('now', '-6 day'))\
                and stat_id=" + req.params.stationid;
     excecuteAndSendJSONResponse(sql, res);
 };
 
 exports.read_rain_lastweek = function(req, res) {
     let sql = "Select one_hr_rain, todays_rain, when_recorded \
-               from rain where when_recorded  > (SELECT DATETIME('now', '-7 day'))\
+               from rain where when_recorded  > (SELECT DATETIME('now', '-6 day'))\
                and stat_id=" + req.params.stationid;
     excecuteAndSendJSONResponse(sql, res);
 };
 
+exports.read_rain_lastquarter = function(req, res) {
+    let sql = "Select SUM(one_hr_rain) as todays_rain, when_recorded \
+               from rain where when_recorded  > (SELECT DATETIME('now', '-90 day'))\
+               and stat_id=" + req.params.stationid + " GROUP BY strftime(\"%d-%m-%Y\", when_recorded) ORDER BY when_recorded";
+               
+    excecuteAndSendJSONResponse(sql, res);
+};
 exports.read_wind_lastweek = function(req, res) {
     let sql = "Select bearing, speed, max_speed, when_recorded \
-               from wind where when_recorded  > (SELECT DATETIME('now', '-7 day'))\
+               from wind where when_recorded  > (SELECT DATETIME('now', '-6 day'))\
                and stat_id=" + req.params.stationid;
     excecuteAndSendJSONResponse(sql, res);
 };

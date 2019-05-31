@@ -146,6 +146,23 @@ void verySlowLoop()
   soilSensor->sample();
 }
 
+void resetIfMidnight(){
+  //Reset all the sensors at midnight
+  if(Time.hour(Time.now()) == 0 && !sensorsReset)
+  {
+    windSensor->reset();
+    rainSensor->reset();
+    sensorsReset = true;
+    syncTime();
+  }
+
+  //Clear the sensor reset flag in the next hour
+  if(sensorsReset && Time.hour(Time.now()) != 0)
+  {
+    sensorsReset = false;
+  }
+}
+
 //---------------------------------------------------------------
 void loop()
 {
@@ -153,6 +170,8 @@ void loop()
         syncTime();
         sendTime = millis();
       }
+
+      resetIfMidnight();
 
       loopStart = millis();
 
@@ -171,21 +190,6 @@ void loop()
       {
         verySlowLoop();
         lastVerySlowLoop = millis();
-      }
-
-      //Reset all the sensors at midnight
-      if(Time.hour(Time.now()) == 0 && !sensorsReset)
-      {
-        windSensor->reset();
-        rainSensor->reset();
-        sensorsReset = true;
-        syncTime();
-      }
-
-      //Clear the sensor reset flag in the next hour
-      if(sensorsReset && Time.hour(Time.now()) != 0)
-      {
-        sensorsReset = false;
       }
 
       //Publish the results

@@ -55,12 +55,15 @@ void RainSensor::rainIRQ()
 
 void RainSensor::sample()
 {
-    int hour = Time.hour(Time.now());
-    if(hour != mCurrentHour)
-    {
+    int hour = Time.hour(Time.now()); 
+    if(hour != mCurrentHour){
       if(mCurrentRecord < MAX_RECORDS){
         RainRecord* nextRecord = mRecords[mCurrentRecord];
         nextRecord->time = Time.now();
+        if(hour == 0){ //roll over time into next day
+          mRainToday = mRain1Hour
+          ;
+        }
         nextRecord->rainToday = mRainToday;
         nextRecord->rainLastHr = mRain1Hour;
         mCurrentRecord++;
