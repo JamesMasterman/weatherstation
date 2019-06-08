@@ -10,6 +10,10 @@
         [yScaleMin]="yscaleMin" [yScaleMax]="yscaleMax" 
         [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [autoScale]="autoScale" [timeline]="timeline"
         [roundDomains]="roundDomains" (select)="onSelect($event)">
+        <ng-template #tooltipTemplate let-model="model">
+            <div >{{model.name | date :'EEE'}} at {{model.name | date :'hh:mma'}} </div>
+            <div> {{model.value| number:'1.0-1'}}km/hr</div>
+      </ng-template>
       </ngx-charts-line-chart>
     </div>
     <div class="card-footer-large">

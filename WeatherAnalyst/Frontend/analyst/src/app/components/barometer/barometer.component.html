@@ -11,9 +11,8 @@
               [timeline]="timeline" [yScaleMin]="yscaleMin" [yScaleMax]="yscaleMax" [roundDomains]="roundDomains"
               (select)="onSelect($event)">
               <ng-template #tooltipTemplate let-model="model">
-              <div >
-                    {{model.name | date :'short'}} - {{model.value| number:'1.0-1'}}hPa
-              </div>
+                  <div >{{model.name | date :'EEE'}} at {{model.name | date :'hh:mma'}} </div>
+                  <div> {{model.value| number:'1.0-1'}}hPa</div>
               </ng-template>
         </ngx-charts-line-chart>
   </div>
