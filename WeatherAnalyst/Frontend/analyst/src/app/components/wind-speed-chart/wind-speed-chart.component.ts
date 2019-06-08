@@ -38,17 +38,17 @@ export class WindSpeedChartComponent implements OnInit {
 
   calculateMinMaxValues(data: WindModel[]) {
     var windSpeed = 0
+    var peakWind = 0;
     var lastDay = -1
     var windiestDay = -1
     this.windiestDay = ""
     var periodDays: string[] = []
-    var avgWindOnDay: number[] = [];
+    var peakWindOnDay: number[] = [];
 
     var minWind = 1000;
     var maxWind = -1000;
-
-    var avgWindAccum = 0;
-    var avgWindCount = 0;
+    var maxPeakWind = -1000;
+    var todaysPeakWind = -1000;
 
     if (data == undefined || data.length == 0)
       return;
@@ -57,9 +57,7 @@ export class WindSpeedChartComponent implements OnInit {
     data.forEach(function (wind: WindModel) {
       var d = new Date(wind.when_recorded);
       windSpeed = wind.speed * MS_TO_KMPH;
-     
-      avgWindAccum += windSpeed;
-      avgWindCount ++;
+      peakWind = wind.max_speed * MS_TO_KMPH;
 
       if(windSpeed < minWind){
         minWind = windSpeed;
@@ -67,14 +65,21 @@ export class WindSpeedChartComponent implements OnInit {
 
       if(windSpeed > maxWind){
         maxWind = windSpeed;
+      }
+
+      if(peakWind > todaysPeakWind){
+        todaysPeakWind = peakWind;
+      }
+
+      if(peakWind > maxPeakWind){
+        maxPeakWind = peakWind;
         windiestDay = d.getDay();
       }
 
       if (d.getDay() != lastDay) {
           periodDays.push(DAYS_OF_WEEK[lastDay]);
-          avgWindOnDay.push(avgWindAccum/avgWindCount);
-          avgWindAccum = 0;
-          avgWindCount = 0;
+          peakWindOnDay.push(todaysPeakWind);
+          todaysPeakWind = -1000;
       }
 
       lastDay = d.getDay();
@@ -82,7 +87,7 @@ export class WindSpeedChartComponent implements OnInit {
 
     //Final day
     periodDays.push(DAYS_OF_WEEK[lastDay]);
-    avgWindOnDay.push(avgWindAccum/avgWindCount);
+    peakWindOnDay.push(todaysPeakWind);
 
     if(windSpeed < minWind){
       minWind = windSpeed;
@@ -90,13 +95,17 @@ export class WindSpeedChartComponent implements OnInit {
 
     if(windSpeed > maxWind){
       maxWind = windSpeed;
+    }
+
+    if(todaysPeakWind > maxPeakWind){
+      maxPeakWind = peakWind;
       windiestDay = lastDay;
     }
 
     this.windiestDay = DAYS_OF_WEEK[windiestDay];
     this.periodDays = periodDays;
-    this.strongestWind = maxWind;
-    this.dailyMaxWind = avgWindOnDay;
+    this.strongestWind = maxPeakWind;
+    this.dailyMaxWind = peakWindOnDay;
     this.yscaleMin = Math.max(0, minWind - 1);
     this.yscaleMax = Math.max(10, maxWind + 1);
   }

@@ -67,10 +67,10 @@ void WindSensor::sample()
   mCurrWindDir = convertAnalogWindDirectionReadingToBearing(wind);
 
   //Accumulate for 5min
-  if(mWindSampleCount < WIND_ACCUM_SIZE){
-    mWindDirAccumulator[mWindSampleCount] = mCurrWindDir;
-    mWindSampleCount++;
-  }else{
+  mWindDirAccumulator[mWindSampleCount] = mCurrWindDir;
+  mWindSampleCount++;
+
+  if(mWindSampleCount >= WIND_ACCUM_SIZE){
     //Get the 5 min average
     mLast5MinAvgWindSpeed = (float)(mWindSpeedAccumulator/mWindSampleCount);
     mLast5MinAvgWindDir = calcAverageBearing(mWindDirAccumulator, mWindSampleCount, mLast5MinAvgWindDir);

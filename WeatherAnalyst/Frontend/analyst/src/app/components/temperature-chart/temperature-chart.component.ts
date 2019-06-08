@@ -18,8 +18,8 @@ export class TemperatureChartComponent implements OnInit, OnChanges{
     chartData: any[];
     minTemp: number;
     maxTemp: number;
-    hottestDay: string;
-    coldestDay:string;
+    hottestDay:Date;
+    coldestDay:Date;
 
     constructor(public rest:WeatherserviceService, private route: ActivatedRoute, private router: Router) { }
 
@@ -41,20 +41,20 @@ export class TemperatureChartComponent implements OnInit, OnChanges{
     calculateMinMaxValues(data: ChartDataModelDate[]){
       var min = 100;
       var max = -100;
-      var hotDay = "";
-      var coldDay = "";
+      var hotDay:Date;
+      var coldDay:Date;
 
       data.forEach(function(value:ChartDataModelDate){
         if(value.value > max){
           max  = value.value;
           var d = value.name;
-          hotDay = DAYS_OF_WEEK[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
+          hotDay = d;
         }
 
         if(value.value < min){
           min = value.value;
           var d = value.name;
-          coldDay = DAYS_OF_WEEK[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
+          coldDay = d;
         }
       });
 

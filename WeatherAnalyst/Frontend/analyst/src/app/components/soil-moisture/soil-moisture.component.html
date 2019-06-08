@@ -14,9 +14,9 @@
   <div class="card-footer-large">
     <div class="stats">
       <span class="text-danger">Dryest </span>{{minMoisture| number:'1.0-1'}}% on <span
-        class="text-danger">{{dryestDay}}</span> |
+        class="text-danger">{{dryestDay| date :'EEEE'}} at {{dryestDay| date :'hh:mma'}}</span> |
       <span class="text-success">Wettest </span>{{maxMoisture| number:'1.0-1'}}% on <span
-        class="text-success">{{wettestDay}}</span>
+        class="text-success">{{wettestDay| date :'EEEE'}} at {{wettestDay| date :'hh:mma'}}</span>
     </div>
   </div>
 </div>

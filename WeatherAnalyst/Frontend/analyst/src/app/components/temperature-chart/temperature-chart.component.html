@@ -20,9 +20,9 @@
       <div class="card-footer-large">
             <div class="stats">
                   <span class="text-info">Minimum </span>{{minTemp| number:'1.0-1'}}°C on <span
-                        class="text-info">{{coldestDay}}</span> |
+                        class="text-info">{{coldestDay| date :'EEEE'}} at {{coldestDay| date :'hh:mma'}}</span> |
                   <span class="text-danger">Maximum </span>{{maxTemp| number:'1.0-1'}}°C on <span
-                        class="text-danger">{{hottestDay}}</span>
+                        class="text-danger">{{hottestDay| date :'EEEE'}} at {{hottestDay| date :'hh:mma'}}</span>
             </div>
       </div>
 </div>

@@ -22,6 +22,14 @@ export class ChartMultiDataModelDate
         return new ChartMultiDataModelDate(name, series);
     }
 
+    static FromPressureModel = function(name: string, temps:TemperatureModel[]){
+        var series = temps.map(function (temperature) {
+            return ChartDataModelDate.FromPressureModel(temperature);
+        });
+        
+        return new ChartMultiDataModelDate(name, series);
+    }
+
     static FromSoilTemperatureModel = function(name: string, temps:SoilModel[]){
         var series = temps.map(function (temperature) {
             return ChartDataModelDate.FromSoilTemperatureModel(temperature);

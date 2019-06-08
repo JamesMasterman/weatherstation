@@ -16,8 +16,8 @@ export class SoilMoistureComponent implements OnInit {
   chartData: any[];
   minMoisture: number;
   maxMoisture: number;
-  dryestDay: string;
-  wettestDay:string;
+  dryestDay: Date;
+  wettestDay:Date;
 
   constructor(public rest:WeatherserviceService, private route: ActivatedRoute, private router: Router) { }
 
@@ -37,21 +37,21 @@ export class SoilMoistureComponent implements OnInit {
   calculateMinMaxValues(data: ChartDataModelDate[]){
     var min = 100;
     var max = -100;
-    var dryDay = "";
-    var wetDay = "";
+    var dryDay:Date;
+    var wetDay:Date;
 
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     data.forEach(function(value:ChartDataModelDate){
       if(value.value > max){
         max  = value.value;
         var d = value.name;
-        wetDay = days[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
+        wetDay = d;
       }
 
       if(value.value < min){
         min = value.value;
         var d = value.name;
-        dryDay = days[d.getDay()] + " at " + d.getHours() + ":" + d.getMinutes();
+        dryDay = d;
       }
     });
 

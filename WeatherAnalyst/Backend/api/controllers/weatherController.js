@@ -69,7 +69,8 @@ exports.read_today_summary = function(req, res) {
             });
 
             sql = "Select AVG(soil_temperature) as soil_temp, AVG(soil_moisture) as soil_moist\
-                    from soil where when_recorded >= '" + todayStr + "' and stat_id = " + req.params.stationid;
+                    from soil where when_recorded = (select MAX(when_recorded) from soil)\
+                     and stat_id = " + req.params.stationid;
             db.get(sql, [], (err, row) => {
                 if (err) {
                     return console.error(err.message);
@@ -79,7 +80,8 @@ exports.read_today_summary = function(req, res) {
                 response.soil_moist = row.soil_moist;   
             });
 
-            sql = "Select MAX(max_speed) as wind_max, AVG(speed) as wind_avg from wind where when_recorded >= '" + todayStr + "' and stat_id = " + req.params.stationid;
+            sql = "Select MAX(max_speed) as wind_max, AVG(speed) as wind_avg from wind\
+             where when_recorded = (select MAX(when_recorded) from wind) and stat_id = " + req.params.stationid;
             db.get(sql, [], (err, row) => {
                 if (err) {
                     return console.error(err.message);
@@ -90,7 +92,7 @@ exports.read_today_summary = function(req, res) {
                 response.wind_avg = row.wind_avg*MS_TO_KMPH;   
             });
 
-            sql = "Select bearing from wind where when_recorded > '" + todayStr + "' and stat_id = " + req.params.stationid;
+            sql = "Select bearing, speed from wind where when_recorded > '" + todayStr + "' and stat_id = " + req.params.stationid;
             db.all(sql, [], (err, rows) => {
                 if (err) {
                     return console.error(err.message);
@@ -100,8 +102,8 @@ exports.read_today_summary = function(req, res) {
                 var sinAll = 0;
                 rows.forEach((row)=>{
                     var radians = row.bearing* Math.PI/180;
-                    cosAll += Math.cos(radians);
-                    sinAll += Math.cos(radians);
+                    cosAll += (Math.cos(radians)*row.speed);
+                    sinAll += (Math.sin(radians)*row.speed);
                 });
 
                 response.wind_direction = getDirection(Math.atan2(sinAll, cosAll) / (Math.PI/180));
@@ -118,6 +120,8 @@ exports.read_today_summary = function(req, res) {
 
 function getDirection(windBearing)
 {
+    if(windBearing < 0) windBearing += 360;
+
     if(windBearing > 292.5 && windBearing <=337.5){
         return "NW"
     }else if(windBearing >22.5 && windBearing <=67.5){
@@ -198,7 +202,6 @@ exports.read_wind_lastweek = function(req, res) {
                and stat_id=" + req.params.stationid;
     excecuteAndSendJSONResponse(sql, res);
 };
-
 
 function excecuteAndSendJSONResponse(sql, res){
     let jsonExporter = getJsonExporter();

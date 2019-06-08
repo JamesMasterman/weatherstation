@@ -21,7 +21,7 @@ import { CurrentWeatherComponent } from '../current-weather/current-weather.comp
 import { SoilChartComponent } from '../../components/soil-chart/soil-chart.component';
 import { RainChartComponent } from 'src/app/components/rain-chart/rain-chart.component';
 import { SoilMoistureComponent } from '../../components/soil-moisture/soil-moisture.component';
-import { BarometerComponent } from '../../components/barometer/barometer.component';
+import { BarometerChartComponent } from '../../components/barometer/barometer.component';
 import { WindSpeedChartComponent } from '../../components/wind-speed-chart/wind-speed-chart.component';
 import { TemperatureHeatMapComponent } from 'src/app/components/temperature-heat-map/temperature-heat-map.component';
 import { RainHeatMapComponent } from 'src/app/components/rain-heat-map/rain-heat-map.component';
@@ -47,7 +47,7 @@ import { RainHeatMapComponent } from 'src/app/components/rain-heat-map/rain-heat
     SoilChartComponent,
     RainChartComponent,
     SoilMoistureComponent,
-    BarometerComponent,
+    BarometerChartComponent,
     WindSpeedChartComponent,
     TemperatureHeatMapComponent,
     RainHeatMapComponent

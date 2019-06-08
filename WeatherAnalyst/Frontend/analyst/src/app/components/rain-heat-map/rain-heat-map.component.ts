@@ -4,7 +4,7 @@ import { WeatherserviceService } from 'src/app/services/weatherservice.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TemperatureModel } from 'src/app/models/temperature.model';
 import { ChartDataModel } from 'src/app/models/chart-data-model';
-import { DAYS_OF_WEEK, getOrdinalNum, MONTHS } from 'src/app/models/constants';
+import { DAYS_OF_WEEK, getOrdinalNum, MONTHS, MONTHS_SHORT } from 'src/app/models/constants';
 import { RainModel } from 'src/app/models/rain.model';
 
 @Component({
@@ -63,15 +63,18 @@ export class RainHeatMapComponent implements OnInit {
           }
 
           dataIndex++;
-          dailyData.push(oneDay);
+        }else{
+          oneDay = new ChartDataModel(d, DAYS_OF_WEEK[i], 0);
         }
+
+        dailyData.push(oneDay);
 
         if (dataIndex >= data.length) {
           break;
         }
       }
 
-      var oneWeek = new ChartMultiDataModel(startOfWeekDate.getDate()  + "/" + (startOfWeekDate.getMonth()+1), dailyData.reverse());
+      var oneWeek = new ChartMultiDataModel(startOfWeekDate.getDate()  + "/" + MONTHS_SHORT[startOfWeekDate.getMonth()], dailyData.reverse());
       dataSet.push(oneWeek);
       dailyData = [];
     }
@@ -84,9 +87,9 @@ export class RainHeatMapComponent implements OnInit {
     }
 
     this.min = 0;
-    this.max = maxRain;
+    this.max = 100;
     this.yscaleMin = 0;
-    this.yscaleMax = maxRain;
+    this.yscaleMax = 100;
     this.minRain = 0;
     this.maxRain = maxRain;
     this.wettestDay = DAYS_OF_WEEK[wettestDay.getDay()] + " " + getOrdinalNum(wettestDay.getDate()) + " of " + MONTHS[wettestDay.getMonth()];
