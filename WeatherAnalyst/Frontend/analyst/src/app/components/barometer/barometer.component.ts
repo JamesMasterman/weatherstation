@@ -25,7 +25,7 @@ export class BarometerChartComponent implements OnInit {
     getWeeklyPressures(): void {
       this.rest.getLastWeekAirTemperature(1).subscribe((data: TemperatureModel[]) => {
         this.chartData = []
-        var series = ChartMultiDataModelDate.FromPressureModel("pressure", data);
+        var series = ChartMultiDataModelDate.FromPressure("pressure", data);
         this.calculateMinMaxValues(series.series);
         this.chartData.push(series);
       });

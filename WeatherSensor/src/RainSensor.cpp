@@ -27,10 +27,7 @@ RainSensor::~RainSensor()
 
 void RainSensor::reset()
 {
-  //If we haven't sampled rollover hour, do it now
-  sample();
-  mRainToday = 0;
-  mRain1Hour = 0;
+  mRainToday = mRain1Hour;
 }
 
 void RainSensor::setup()
@@ -55,15 +52,11 @@ void RainSensor::rainIRQ()
 
 void RainSensor::sample()
 {
-    int hour = Time.hour(Time.now()); 
+    int hour = Time.hour(Time.now());
     if(hour != mCurrentHour){
       if(mCurrentRecord < MAX_RECORDS){
         RainRecord* nextRecord = mRecords[mCurrentRecord];
         nextRecord->time = Time.now();
-        if(hour == 0){ //roll over time into next day
-          mRainToday = mRain1Hour
-          ;
-        }
         nextRecord->rainToday = mRainToday;
         nextRecord->rainLastHr = mRain1Hour;
         mCurrentRecord++;

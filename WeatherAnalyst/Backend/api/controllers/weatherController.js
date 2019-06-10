@@ -182,6 +182,13 @@ exports.read_soil_lastweek = function(req, res) {
     excecuteAndSendJSONResponse(sql, res);
 };
 
+exports.read_soil_lastquarter = function(req, res) {
+    let sql = "Select AVG(soil_temperature) as soil_temperature, AVG(soil_moisture) as soil_moisture, when_recorded \
+               from soil where when_recorded  > (SELECT DATETIME('now', '-90 day'))\
+               and stat_id=" + req.params.stationid + " GROUP BY strftime(\"%d-%m-%Y\", when_recorded) ORDER BY when_recorded";
+    excecuteAndSendJSONResponse(sql, res);
+};
+
 exports.read_rain_lastweek = function(req, res) {
     let sql = "Select one_hr_rain, todays_rain, when_recorded \
                from rain where when_recorded  > (SELECT DATETIME('now', '-6 day'))\
@@ -196,10 +203,18 @@ exports.read_rain_lastquarter = function(req, res) {
                
     excecuteAndSendJSONResponse(sql, res);
 };
+
 exports.read_wind_lastweek = function(req, res) {
     let sql = "Select bearing, speed, max_speed, when_recorded \
                from wind where when_recorded  > (SELECT DATETIME('now', '-6 day'))\
                and stat_id=" + req.params.stationid;
+    excecuteAndSendJSONResponse(sql, res);
+};
+
+exports.read_wind_lastquarter = function(req, res) {
+    let sql = "Select MAX(max_speed) as max_speed, when_recorded \
+               from wind where when_recorded  > (SELECT DATETIME('now', '-90 day'))\
+               and stat_id=" + req.params.stationid + " GROUP BY strftime(\"%d-%m-%Y\", when_recorded) ORDER BY when_recorded";
     excecuteAndSendJSONResponse(sql, res);
 };
 
@@ -231,7 +246,7 @@ function getJsonExporter(){
 
 function openDB(){
     // open the database
-    let db = new sqlite3.Database('./db/weather.db', sqlite3.OPEN_READONLY, (err) => {
+    let db = new sqlite3.Database('/home/pi/Documents/programming/github/weatherstation/WeatherServer/weatherstation/weather.db', sqlite3.OPEN_READONLY, (err) => {
         if (err) {
             console.error(err.message);
         }

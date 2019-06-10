@@ -28,7 +28,7 @@ export class SoilMoistureComponent implements OnInit {
   getWeeklySoilMoisture(): void {
     this.rest.getLastWeekSoil(1).subscribe((data: SoilModel[]) => {
       this.chartData = []
-      var series = ChartMultiDataModelDate.FromSoilMoistureModel("moisture", data);
+      var series = ChartMultiDataModelDate.FromSoilMoisture("moisture", data);
       this.calculateMinMaxValues(series.series);
       this.chartData.push(series);
     });

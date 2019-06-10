@@ -25,6 +25,9 @@ import { BarometerChartComponent } from '../../components/barometer/barometer.co
 import { WindSpeedChartComponent } from '../../components/wind-speed-chart/wind-speed-chart.component';
 import { TemperatureHeatMapComponent } from 'src/app/components/temperature-heat-map/temperature-heat-map.component';
 import { RainHeatMapComponent } from 'src/app/components/rain-heat-map/rain-heat-map.component';
+import { SoilTempHeatMapComponent } from 'src/app/components/soil-temp-heat-map/soil-temp-heat-map.component';
+import { SoilMoistureHeatMapComponent } from 'src/app/components/soil-moisture-heat-map/soil-moisture-heat-map.component';
+import { WindHeatMapComponent } from 'src/app/components/wind-heat-map/wind-heat-map.component';
 
 @NgModule({
   imports: [
@@ -50,7 +53,10 @@ import { RainHeatMapComponent } from 'src/app/components/rain-heat-map/rain-heat
     BarometerChartComponent,
     WindSpeedChartComponent,
     TemperatureHeatMapComponent,
-    RainHeatMapComponent
+    RainHeatMapComponent,
+    SoilTempHeatMapComponent,
+    SoilMoistureHeatMapComponent,
+    WindHeatMapComponent
   ]
 })
 

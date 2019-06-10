@@ -1,0 +1,25 @@
+<div class="card card-stats">
+    <div class="card-header card-header-success">
+      <div class="ct-chart" id="temperatureChart">
+        <h5>Average Soil Temperatures (°C) - {{firstDate}} to {{lastDate}}</h5>
+      </div>
+    </div>
+    <br>
+    <div class="chart-wrapper">
+      <ngx-charts-heat-map [scheme]="colorScheme" [results]="chartData" [gradient]="gradient" [xAxis]="showXAxis"
+        [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxis" [min]="min" [max]="max" [xAxisLabel]="xAxisTitle" (select)="onSelect($event)">
+        <ng-template #tooltipTemplate let-model="model">
+            <div>Average temperature on {{model.name}}:</div>
+            <div>{{model.value | number:'1.0-1'}}°C</div>
+          </ng-template>
+      </ngx-charts-heat-map>
+    </div>
+    <div class="card-footer-large">
+      <div class="stats">
+        <span class="text-info">Lowest </span>{{minTemp| number:'1.0-1'}}°C on <span
+          class="text-info">{{coldestDay}}</span> |
+        <span class="text-danger">Highest </span>{{maxTemp| number:'1.0-1'}}°C on <span
+          class="text-danger">{{hottestDay}}</span>
+      </div>
+    </div>
+  </div>

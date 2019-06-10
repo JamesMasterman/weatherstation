@@ -30,7 +30,7 @@ export class RainChartComponent implements OnInit {
   getWeeklyRain(): void {
     this.rest.getLastWeekRain(1).subscribe((data: RainModel[]) => {
       this.chartData = []
-      var series = ChartMultiDataModelDate.FromRainModel("rain", data);
+      var series = ChartMultiDataModelDate.FromRain("rain", data);
       this.calculateMinMaxValues(data);
       this.chartData.push(series);
     });
@@ -43,29 +43,32 @@ export class RainChartComponent implements OnInit {
     var maxRain = 0
     var periodDays: string[] = []
     var dailyRainTotal: number[] = [];
-    var totalRain = 0;
+    var totalRain = 0;    
 
     if (data == undefined || data.length == 0)
       return;
 
     lastDay = new Date(data[0].when_recorded).getDay();
+
     //Loop over days in rain data to build summary table data
     data.forEach(function (value: RainModel) {
       var d = new Date(value.when_recorded);
-
+      
       if (d.getDay() != lastDay) {
         periodDays.push(DAYS_OF_WEEK[lastDay]);
         dailyRainTotal.push(lastRain);
-        totalRain += lastRain;
-      
+        totalRain += lastRain;      
+
         if (lastRain > maxRain) {
           maxRain = lastRain;
           wettestDay = lastDay; 
         }
+
+        lastRain = 0;
       }
 
-      lastDay = d.getDay();
-      lastRain = value.todays_rain;
+      lastRain += value.one_hr_rain;
+      lastDay = d.getDay();      
     });
 
     //Final day

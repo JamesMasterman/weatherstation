@@ -2,7 +2,7 @@ import { WeatherserviceService } from '../../services/weatherservice.service';
 import { Component, OnInit, Input, ViewChild, ElementRef, OnChanges } from '@angular/core';
 import { TemperatureModel } from '../../models/temperature.model';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MONTHS, DAYS_OF_WEEK, getOrdinalNum, MONTHS_SHORT } from '../../models/constants';
+import { MONTHS, DAYS_OF_WEEK, getOrdinalNum, MONTHS_SHORT, TEMP_COLOUR_RANGE } from '../../models/constants';
 import { ChartMultiDataModel } from 'src/app/models/chart-multi-data-model';
 import { ChartDataModel } from 'src/app/models/chart-data-model';
 @Component({
@@ -95,10 +95,6 @@ export class TemperatureHeatMapComponent implements OnInit {
       this.lastDate = getOrdinalNum(d.getDate())  + " of " + MONTHS[d.getMonth()];
     }
 
-    this.min = 0;
-    this.max = 40;
-    this.yscaleMin = 0;
-    this.yscaleMax = 40;
     this.minTemp = minTemp;
     this.maxTemp = maxTemp;
     this.hottestDay = DAYS_OF_WEEK[hotDay.getDay()] + " " + getOrdinalNum(hotDay.getDate()) + " of " + MONTHS[hotDay.getMonth()];
@@ -115,11 +111,11 @@ export class TemperatureHeatMapComponent implements OnInit {
   showLegend = true;
   roundDomains = true;
   yscaleMin = 0;
-  yscaleMax = 30;
+  yscaleMax = 40;
   xAxisTitle= "Week starting"
 
   colorScheme = {
-    domain: ['#ffffff','#44CEF8', '#9EFDED','#21D010','#6BFE71','#CCFFD0','#FFFDD0','#FFFD3F','#FFCB63','#FBCDCE','#FD9BA2','#D23B48','#C70910']
+    domain: TEMP_COLOUR_RANGE
   };
 
   onSelect(event) {

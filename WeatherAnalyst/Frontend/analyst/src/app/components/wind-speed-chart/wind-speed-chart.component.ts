@@ -30,7 +30,7 @@ export class WindSpeedChartComponent implements OnInit {
   getWeeklyWind(): void {
     this.rest.getLastWeekWind(1).subscribe((data: WindModel[]) => {
       this.chartData = []
-      var series = ChartMultiDataModelDate.FromWindModel("wind", data);
+      var series = ChartMultiDataModelDate.FromWind("wind", data);
       this.calculateMinMaxValues(data);
       this.chartData.push(series);
     });

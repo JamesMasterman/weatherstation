@@ -1,0 +1,25 @@
+<div class="card card-stats">
+    <div class="card-header card-header-success">
+      <div class="ct-chart" id="temperatureChart">
+        <h5>Max Wind Speeds (km/hr) - {{firstDate}} to {{lastDate}}</h5>
+      </div>
+    </div>
+    <br>
+    <div class="chart-wrapper">
+      <ngx-charts-heat-map [scheme]="colorScheme" [results]="chartData" [gradient]="gradient" [xAxis]="showXAxis"
+        [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxis" [min]="min" [max]="max" [xAxisLabel]="xAxisTitle" (select)="onSelect($event)">
+        <ng-template #tooltipTemplate let-model="model">
+            <div>Max wind speed on {{model.name}}:</div>
+            <div>{{model.value | number:'1.0-1'}}km/hr</div>
+          </ng-template>
+      </ngx-charts-heat-map>
+    </div>
+    <div class="card-footer-large">
+      <div class="stats">
+        <span class="text-info">Calmest </span>{{minSpeed| number:'1.0-1'}}km/hr on <span
+          class="text-info">{{calmestDay}}</span> |
+        <span class="text-danger">Strongest </span>{{maxSpeed| number:'1.0-1'}}km/hr on <span
+          class="text-danger">{{windiestDay}}</span>
+      </div>
+    </div>
+  </div>

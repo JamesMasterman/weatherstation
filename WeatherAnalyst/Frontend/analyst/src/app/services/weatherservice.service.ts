@@ -86,6 +86,24 @@ export class WeatherserviceService {
     );
   }
 
+  getQuarterSoil(id): Observable<SoilModel[]> {
+    return this.http.get(endpoint + 'soil/lastquarter/' + id).pipe(
+      map(res => 
+        {
+         return <SoilModel[]>res;
+        })
+    );
+  }
+
+  getQuarterWind(id): Observable<WindModel[]> {
+    return this.http.get(endpoint + 'wind/lastquarter/' + id).pipe(
+      map(res => 
+        {
+         return <WindModel[]>res;
+        })
+    );
+  }
+
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
   

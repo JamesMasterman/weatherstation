@@ -31,8 +31,15 @@ module.exports = function(app) {
   app.route('/api/v1/soil/lastweek/:stationid')
   .get(weatherApi.read_soil_lastweek);
 
+  app.route('/api/v1/soil/lastquarter/:stationid')
+  .get(weatherApi.read_soil_lastquarter);
+
   //wind routes
   app.route('/api/v1/wind/lastweek/:stationid')
   .get(weatherApi.read_wind_lastweek);
+
+  app.route('/api/v1/wind/lastquarter/:stationid')
+  .get(weatherApi.read_wind_lastquarter);
+
 
 };

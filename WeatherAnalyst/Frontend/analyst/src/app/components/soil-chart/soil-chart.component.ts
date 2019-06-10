@@ -28,7 +28,7 @@ export class SoilChartComponent implements OnInit {
   getWeeklyTemperatures(): void {
     this.rest.getLastWeekSoil(1).subscribe((data: SoilModel[]) => {
       this.chartData = []
-      var series = ChartMultiDataModelDate.FromSoilTemperatureModel("temp", data);
+      var series = ChartMultiDataModelDate.FromSoilTemperature("temp", data);
       this.calculateMinMaxValues(series.series);
       this.chartData.push(series);
     });
@@ -39,8 +39,7 @@ export class SoilChartComponent implements OnInit {
     var max = -100;
     var hotDay:Date;
     var coldDay:Date;
-
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    
     data.forEach(function(value:ChartDataModelDate){
       if(value.value > max){
         max  = value.value;

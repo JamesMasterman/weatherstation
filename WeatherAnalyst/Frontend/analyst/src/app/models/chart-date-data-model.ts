@@ -14,7 +14,7 @@ export class ChartDataModelDate
         this.value = value;
     }
 
-    static FromPressureModel = function(temp:TemperatureModel)
+    static FromPressure = function(temp:TemperatureModel)
     {
         var name = new Date(temp.when_recorded);
         var value = temp.pressure;
@@ -22,7 +22,15 @@ export class ChartDataModelDate
         return new ChartDataModelDate(name, value);
     }
 
-    static FromTemperatureModel = function(temp:TemperatureModel)
+    static FromHumidity = function(humid:TemperatureModel)
+    {
+        var name = new Date(humid.when_recorded);
+        var value = humid.humidity;
+
+        return new ChartDataModelDate(name, value);
+    }
+
+    static FromTemperature = function(temp:TemperatureModel)
     {
         var name = new Date(temp.when_recorded);
         var value = temp.temperature;

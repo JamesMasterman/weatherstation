@@ -14,23 +14,31 @@ export class ChartMultiDataModelDate
         this.series = series;
     }
 
-    static FromTemperatureModel = function(name: string, temps:TemperatureModel[]){
-        var series = temps.map(function (temperature) {
-            return ChartDataModelDate.FromTemperatureModel(temperature);
+    static FromHumidity = function(name: string, humid:TemperatureModel[]){
+        var series = humid.map(function (humidity) {
+            return ChartDataModelDate.FromHumidity(humidity);
         });
         
         return new ChartMultiDataModelDate(name, series);
     }
 
-    static FromPressureModel = function(name: string, temps:TemperatureModel[]){
+    static FromTemperature = function(name: string, temps:TemperatureModel[]){
         var series = temps.map(function (temperature) {
-            return ChartDataModelDate.FromPressureModel(temperature);
+            return ChartDataModelDate.FromTemperature(temperature);
         });
         
         return new ChartMultiDataModelDate(name, series);
     }
 
-    static FromSoilTemperatureModel = function(name: string, temps:SoilModel[]){
+    static FromPressure = function(name: string, temps:TemperatureModel[]){
+        var series = temps.map(function (temperature) {
+            return ChartDataModelDate.FromPressure(temperature);
+        });
+        
+        return new ChartMultiDataModelDate(name, series);
+    }
+
+    static FromSoilTemperature = function(name: string, temps:SoilModel[]){
         var series = temps.map(function (temperature) {
             return ChartDataModelDate.FromSoilTemperatureModel(temperature);
         });
@@ -38,7 +46,7 @@ export class ChartMultiDataModelDate
         return new ChartMultiDataModelDate(name, series);
     }
 
-    static FromSoilMoistureModel = function(name: string, temps:SoilModel[]){
+    static FromSoilMoisture = function(name: string, temps:SoilModel[]){
         var series = temps.map(function (moisture) {
             return ChartDataModelDate.FromSoilMoistureModel(moisture);
         });
@@ -46,7 +54,7 @@ export class ChartMultiDataModelDate
         return new ChartMultiDataModelDate(name, series);
     }
 
-    static FromRainModel = function(name: string, rain:RainModel[]){
+    static FromRain = function(name: string, rain:RainModel[]){
         var series = rain.map(function (rain) {
             return ChartDataModelDate.FromRainModel(rain);
         });
@@ -54,7 +62,7 @@ export class ChartMultiDataModelDate
         return new ChartMultiDataModelDate(name, series);
     }
 
-    static FromWindModel = function(name: string, wind:WindModel[]){
+    static FromWind = function(name: string, wind:WindModel[]){
         var series = wind.map(function (wind) {
             return ChartDataModelDate.FromWindModel(wind);
         });
