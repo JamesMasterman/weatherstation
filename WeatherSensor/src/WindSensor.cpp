@@ -214,8 +214,6 @@ uint16_t WindSensor::convertAnalogWindDirectionReadingToBearing(int adc)
     angle = 0;
 
   return angle;
-
-
 }
 
 WIND_QUADRANT WindSensor::convertBearingToQuadrant(uint16_t bearing)

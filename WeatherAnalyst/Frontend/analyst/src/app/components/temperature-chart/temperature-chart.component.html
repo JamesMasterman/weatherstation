@@ -7,7 +7,7 @@
       <br>
       <div class="chart-wrapper">
             <ngx-charts-line-chart [scheme]="colorScheme" [results]="chartData" [gradient]="gradient"
-                  [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [autoScale]="autoScale"
+                  [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [autoScale]="autoscale"
                   [timeline]="timeline" [yScaleMin]="yscaleMin" [yScaleMax]="yscaleMax" [roundDomains]="roundDomains"
                   (select)="onSelect($event)">
                   <ng-template #tooltipTemplate let-model="model">

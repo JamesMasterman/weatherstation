@@ -8,7 +8,7 @@ import { DailySummaryModel } from '../models/dailysummary.model';
 import {RainModel} from '../models/rain.model';
 import { WindModel } from '../models/wind.model';
 
-const endpoint = 'http://localhost:3000/api/v1/';
+const endpoint = 'http://192.168.100.9:3000/api/v1/'; 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json'
