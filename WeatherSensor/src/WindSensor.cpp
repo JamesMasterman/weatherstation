@@ -161,32 +161,31 @@ uint16_t WindSensor::getAvgWindBearing()
 
 float WindSensor::calcAverageBearing(float* values, int count, float currentBearing)
 {
-    double sunSin = 0;
-    double sunCos = 0;
-    double bearing = 0;
-
-    for (int i=0;i<count; i++)
-    {
-        bearing = values[i];
-        bearing *= PI/180.0f; //convert to radians
-
-        sunSin += sin(bearing);
-        sunCos += cos(bearing);
-    }
-
-    int avBearing = 0;
+    int avBearing = (int)currentBearing;
     if (count > 0)
     {
-        double bearingInRad = atan2(sunSin/count, sunCos/count);
-        avBearing = (int) (bearingInRad*180.0f/PI);
-        if (avBearing<0)
-            avBearing += 360;
-    }else
-    {
-      avBearing = currentBearing;
+      long sum = values[0];
+      int D = values[0];
+      for(int i = 1 ; i < count ; i++)
+      {
+        int delta = values[i] - D;
+
+        if(delta < -180)
+          D += delta + 360;
+        else if(delta > 180)
+          D += delta - 360;
+        else
+          D += delta;
+
+        sum += D;
+      }
+
+      avBearing = sum / count;
+      if(avBearing >= 360) avBearing -= 360;
+      if(avBearing < 0) avBearing += 360;
     }
 
-    return avBearing;
+    return (float)avBearing;
 }
 
 uint16_t WindSensor::convertAnalogWindDirectionReadingToBearing(int adc)
@@ -200,15 +199,15 @@ uint16_t WindSensor::convertAnalogWindDirectionReadingToBearing(int adc)
   //your wind vain output fall within the values listed below.
 
   uint16_t angle = 0;
-  if(adc > 2270 && adc <= 2790) angle = 0;//North
-  if(adc > 3120 && adc <= 3570) angle = 45;//NE
-  if(adc > 3890 && adc <= 3999) angle = 90;//East
-  if(adc > 3700 && adc <= 3950) angle = 135;//SE
 
-  if(adc > 3570 && adc <= 3700) angle = 180;//South
-  if(adc > 2790 && adc <= 2850) angle = 225;//SW
   if(adc > 1400 && adc <= 1930) angle = 270;//West
   if(adc > 1930 && adc <= 2270) angle = 315;//NW
+  if(adc > 2270 && adc <= 2790) angle = 0;//North
+  if(adc > 2790 && adc <= 3120) angle = 225;//SW
+  if(adc > 3120 && adc <= 3570) angle = 45;//NE
+  if(adc > 3570 && adc <= 3700) angle = 180;//South
+  if(adc > 3700 && adc <= 3950) angle = 135;//SE
+  if(adc > 3950 && adc <= 4500) angle = 90;//East
 
   if(angle > 360 || angle < 0)
     angle = 0;
@@ -220,7 +219,7 @@ WIND_QUADRANT WindSensor::convertBearingToQuadrant(uint16_t bearing)
 {
   WIND_QUADRANT quad = WIND_QUADRANT::N;
 
-  if(bearing > 337.5 && bearing <= 22.5)
+  if(bearing > 337.5 || bearing <= 22.5)
     quad = WIND_QUADRANT::N;
   else if(bearing <= 337.5 && bearing > 292.5)
     quad = WIND_QUADRANT::NW;

@@ -199,7 +199,7 @@ void loop()
         WiFi.connect();
         if(waitFor(WiFi.ready, WIFI_TIMEOUT_MS)){
             publishAll();
-            sendAttempts = 0;
+            sendAttempts = 0; 
         }else{
           if(sendAttempts < 5){
             sendAttempts++;
