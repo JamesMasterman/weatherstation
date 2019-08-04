@@ -7,8 +7,9 @@ import {SoilModel} from '../models/soil.model';
 import { DailySummaryModel } from '../models/dailysummary.model';
 import {RainModel} from '../models/rain.model';
 import { WindModel } from '../models/wind.model';
+import { WindDirectionModel } from '../models/winddirection.model';
 
-const endpoint = 'http://192.168.100.9:3000/api/v1/'; 
+const endpoint = 'http://localhost:3000/api/v1/'; //'http://192.168.100.9:3000/api/v1/'; 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json'
@@ -68,6 +69,16 @@ export class WeatherserviceService {
     );
   }
 
+  getLastWeekWindDirection(id): Observable<WindDirectionModel[]> {
+    return this.http.get(endpoint + 'wind/direction/lastweek/' + id).pipe(
+      map(res => 
+        {
+         return <WindDirectionModel[]>res;
+        })
+    );
+  }
+
+
   getQuarterAirTemperatures(id): Observable<TemperatureModel[]> {
     return this.http.get(endpoint + 'temperature/lastquarter/' + id).pipe(
       map(res => 
@@ -103,6 +114,8 @@ export class WeatherserviceService {
         })
     );
   }
+
+
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

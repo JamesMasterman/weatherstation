@@ -28,6 +28,7 @@ import { RainHeatMapComponent } from 'src/app/components/rain-heat-map/rain-heat
 import { SoilTempHeatMapComponent } from 'src/app/components/soil-temp-heat-map/soil-temp-heat-map.component';
 import { SoilMoistureHeatMapComponent } from 'src/app/components/soil-moisture-heat-map/soil-moisture-heat-map.component';
 import { WindHeatMapComponent } from 'src/app/components/wind-heat-map/wind-heat-map.component';
+import { WindRoseComponent } from 'src/app/components/wind-rose/wind-rose.component';
 
 @NgModule({
   imports: [
@@ -56,7 +57,8 @@ import { WindHeatMapComponent } from 'src/app/components/wind-heat-map/wind-heat
     RainHeatMapComponent,
     SoilTempHeatMapComponent,
     SoilMoistureHeatMapComponent,
-    WindHeatMapComponent
+    WindHeatMapComponent,
+    WindRoseComponent
   ]
 })
 

@@ -41,5 +41,13 @@ module.exports = function(app) {
   app.route('/api/v1/wind/lastquarter/:stationid')
   .get(weatherApi.read_wind_lastquarter);
 
+  //wind direction routes
+  app.route('/api/v1/wind/direction/lastweek/:stationid')
+  .get(weatherApi.read_wind_direction_lastweek);
+
+  //weather stats
+  app.route('/api/v1/summary/ytd')
+  .get(weatherApi.read_year_to_date_summary_stats);
+
 
 };

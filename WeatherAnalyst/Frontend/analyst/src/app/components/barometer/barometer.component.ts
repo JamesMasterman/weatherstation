@@ -45,8 +45,8 @@ export class BarometerChartComponent implements OnInit {
         }
       });
 
-      this.yscaleMin = min - 1;
-      this.yscaleMax = max + 1;
+      this.yscaleMin = 890;
+      this.yscaleMax = 920;
     }
 
     // chart options

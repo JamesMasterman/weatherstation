@@ -194,10 +194,10 @@ void loop()
 
       //Publish the results
       if((millis() - sendTime) > PUBLISH_TIME_MS){
+        sendTime = millis();
         WiFi.on();
         WiFi.connect();
         if(waitFor(WiFi.ready, WIFI_TIMEOUT_MS)){
-            sendTime = millis();
             publishAll();
             sendAttempts = 0;
         }else{
