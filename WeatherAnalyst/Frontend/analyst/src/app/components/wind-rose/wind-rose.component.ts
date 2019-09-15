@@ -80,8 +80,8 @@ export class WindRoseComponent implements OnInit {
 
     console.log(data);
     
-    var width = 960;
-    var height = 960;
+    var width = 600;
+    var height = 800;
     var margin = {top: 40, right: 80, bottom: 40, left: 40};
     var innerRadius = 20;
     var chartWidth = width - margin.left - margin.right;

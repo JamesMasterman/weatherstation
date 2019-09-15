@@ -10,6 +10,8 @@
 #include "SoilSensors.h"
 #include "OnboardSensors.h"
 #include "LightMonitor.h"
+#include "OneWire.h"
+#include "spark-dallas-temperature.h"
 
 #define STATION_ID 1
 
@@ -31,12 +33,17 @@ unsigned long lastVerySlowLoop = 0;
 int sendAttempts = 0;
 bool sensorsReset = false;
 
+
+OneWire oneWire(SOIL_TEMP);
+DallasTemperature soilTempSensor(&oneWire);
+
 WindSensor* windSensor = new WindSensor(STATION_ID);
 RainSensor* rainSensor = new RainSensor(STATION_ID);
-SoilSensors* soilSensor = new SoilSensors(STATION_ID);
+SoilSensors* soilSensor = new SoilSensors(STATION_ID, &soilTempSensor);
 LightMonitor* lightSensor = new LightMonitor(STATION_ID);
 OnboardSensors* onboardSensors = new OnboardSensors(STATION_ID);
 UDPCommunicator* udp = new UDPCommunicator();
+
 
 void windSpeedInterrupt()
 {
@@ -82,7 +89,7 @@ ApplicationWatchdog wd(WATCHDOG_TIMEOUT_MS, System.reset);
 //---------------------------------------------------------------
 void setup()
 {
-    //Serial.begin(9600);   // open serial over USB at 9600 baud
+    Serial.begin(9600);   // open serial over USB at 9600 baud
 
     onboardSensors->setup();
     rainSensor->setup();
@@ -166,7 +173,7 @@ void resetIfMidnight(){
 //---------------------------------------------------------------
 void loop()
 {
-      if(sendTime == 0){
+     if(sendTime == 0){
         syncTime();
         sendTime = millis();
       }
@@ -199,7 +206,7 @@ void loop()
         WiFi.connect();
         if(waitFor(WiFi.ready, WIFI_TIMEOUT_MS)){
             publishAll();
-            sendAttempts = 0; 
+            sendAttempts = 0;
         }else{
           if(sendAttempts < 5){
             sendAttempts++;
@@ -237,7 +244,7 @@ void printInfo()
 Serial.print("Free mem = ");
 Serial.println(System.freeMemory());
 
-  Serial.print("Temp:");
+  /*Serial.print("Temp:");
   Serial.print(onboardSensors->getCurrentTemp());
   Serial.print("C");
 
@@ -252,7 +259,7 @@ Serial.println(System.freeMemory());
   Serial.print("light: ");
   Serial.print(lightSensor->getLightStrengthPercent());
 
-  /*Serial.print(", W Speed:");
+  Serial.print(", W Speed:");
   Serial.print(windSensor->getWindSpeed());//instantaneous wind Speed
   Serial.print(", Avg W Speed:");
   Serial.print(windSensor->getAvgWindSpeed());//2 min wind Speed
@@ -263,14 +270,14 @@ Serial.println(System.freeMemory());
   Serial.print(windSensor->getAvgWindBearing());//2 min wind Speed*/
 
 
-  Serial.print(", Rain Last hour:");
+  /*Serial.print(", Rain Last hour:");
   Serial.print(rainSensor->getRainLastHour());//max wind Speed
 
   Serial.print(", Rain Today:");
   Serial.print(rainSensor->getRainToday());//max wind Speed
 
   Serial.print(", Soil Moisture: ");
-  Serial.print(soilSensor->getSoilMoisturePercent());
+  Serial.print(soilSensor->getSoilMoisturePercent());*/
 
   Serial.print(", Soil Temp: ");
   Serial.println(soilSensor->getSoilTemperature());

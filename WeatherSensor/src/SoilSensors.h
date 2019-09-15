@@ -3,7 +3,13 @@
 #include "application.h"
 #include "SensorBase.h"
 #include "PinIDs.h"
+#include "spark-dallas-temperature.h"
 
+//OneWire and DallasTemperature libraries are needed for DS18B20 Temp sensor
+
+
+
+/***********REPLACE THIS ADDRESS WITH YOUR ADDRESS*************/
 
 #define SOIL_EVENT "SOIL_EVENT"
 
@@ -16,7 +22,7 @@ struct SoilRecord{
 class SoilSensors: public SensorBase
 {
 public:
-  SoilSensors(int stationID);
+  SoilSensors(int stationID, DallasTemperature* soilTempSensor);
   ~SoilSensors();
 
   void setup();
@@ -41,4 +47,5 @@ private:
 
   SoilRecord** mRecords;
 
+  DallasTemperature* mSoilTempSensor;
 };

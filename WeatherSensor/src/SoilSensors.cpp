@@ -16,8 +16,16 @@
 // the value of the 'other' resistor
 #define SERIESRESISTOR 10000
 
+#define TEMPERATURE_PRECISION 11
+
 const int MAX_RECORDS = 5;
-SoilSensors::SoilSensors(int stationID): SensorBase(stationID)
+
+//Run I2C Scanner to get address of DS18B20(s)
+//(found in the Firmware folder in the Photon Weather Shield Repo)
+/***********REPLACE THIS ADDRESS WITH YOUR ADDRESS*************/
+DeviceAddress inSoilThermometer = {0x28, 0xAA, 0x7E, 0x3E, 0x54, 0x14, 0x01, 0x73};//Waterproof temp sensor address
+
+SoilSensors::SoilSensors(int stationID, DallasTemperature* soilTempSensor): SensorBase(stationID)
 {
     mSoilMoistureReading = 0;
     mSoilMoisturePercent = 0;
@@ -27,6 +35,9 @@ SoilSensors::SoilSensors(int stationID): SensorBase(stationID)
     for(int i=0;i<MAX_RECORDS;i++){
       mRecords[i] = new SoilRecord();
     }
+
+    mSoilTempSensor = soilTempSensor;
+
 }
 
 SoilSensors::~SoilSensors()
@@ -41,6 +52,10 @@ void SoilSensors::setup()
 {
   pinMode(SOIL_MOISTURE_POWER, OUTPUT);//power control for soil moisture
   digitalWrite(SOIL_MOISTURE_POWER, LOW);//Leave off by defualt
+
+  // DS18B20 initialization
+  mSoilTempSensor->begin();
+  mSoilTempSensor->setResolution(inSoilThermometer, TEMPERATURE_PRECISION);
 }
 
 void SoilSensors::sample()
@@ -86,27 +101,13 @@ void SoilSensors::sampleMoisture()
 
 void SoilSensors::sampleTemperature()
 {
-  int samples[NUM_SAMPLES];
-  float averageAnalogValue = 0;
+  mSoilTempSensor->requestTemperatures();
+  float soilTemp = mSoilTempSensor->getTempC(inSoilThermometer);
 
-  // take N samples in a row, with a slight delay
-  for (int i=0; i< NUM_SAMPLES; i++) {
-     averageAnalogValue += analogRead(SOIL_TEMP);
-     delay(10);
+  //Every so often there is an error that throws a -127.00, this compensates
+  if(soilTemp > -100){
+      mSoilTemperature = soilTemp;//push last value so data isn't out of scope
   }
-  averageAnalogValue /= NUM_SAMPLES;
-
-  int thermistor_adc_val;
-  double output_voltage, thermistor_resistance, therm_res_ln;
-  output_voltage = ( (averageAnalogValue * 3.3) / 4095.0 );
-  thermistor_resistance = ( ( 3.3 * ( 10.0 / output_voltage ) ) - 10 ); /* Resistance in kilo ohms */
-  thermistor_resistance = thermistor_resistance * 1000 ; /* Resistance in ohms   */
-  therm_res_ln = log(thermistor_resistance);
-    /*  Steinhart-Hart Thermistor Equation: */
-    /*  Temperature in Kelvin = 1 / (A + B[ln(R)] + C[ln(R)]^3)   */
-    /*  where A = 0.001129148, B = 0.000234125 and C = 8.76741*10^-8  */
-  mSoilTemperature = ( 1 / ( 0.001129148 + ( 0.000234125 * therm_res_ln ) + ( 0.0000000876741 * therm_res_ln * therm_res_ln * therm_res_ln ) ) ); /* Temperature in Kelvin */
-  mSoilTemperature = mSoilTemperature - 273.15; /* Temperature in degree Celsius */
 }
 
 void SoilSensors::publish()
